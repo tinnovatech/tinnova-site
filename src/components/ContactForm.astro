@@ -1,0 +1,95 @@
+---
+interface Props {
+  subject: string;
+  fromName: string;
+  pageCode: string;
+}
+const { subject, fromName, pageCode } = Astro.props;
+---
+<form class="contato-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="155faa0d-e0f5-4ae9-8da4-0a686dec7157">
+  <input type="hidden" name="subject" value={subject}>
+  <input type="hidden" name="from_name" value={fromName}>
+  <input type="hidden" name="form_page" value={pageCode}>
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div class="form-grid">
+    <div class="form-field">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+    </div>
+    <div class="form-field">
+      <label for="cargo">Cargo</label>
+      <input type="text" id="cargo" name="cargo" placeholder="Seu cargo atual">
+    </div>
+    <div class="form-field">
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa" placeholder="Empresa atual">
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Seu principal e-mail" required>
+    </div>
+    <div class="form-field">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 56789" required>
+    </div>
+    <div class="form-field full">
+      <label for="mensagem">Como podemos ajudar?</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Fale sobre seu desafio" required></textarea>
+    </div>
+  </div>
+  <div class="form-footer">
+    <button type="submit" class="form-submit">Fale com um especialista <span aria-hidden="true">↗</span></button>
+    <small>Seus dados serão usados apenas para responder ao contato.</small>
+  </div>
+  <p class="form-msg" id="formMsg"></p>
+</form>
+
+<script is:inline>
+(function(){
+  var form = document.getElementById('contactForm');
+  var msg = document.getElementById('formMsg');
+  if(!form) return;
+  var whatsappUrl = 'https://api.whatsapp.com/send/?phone=5512978981753&text&type=phone_number&app_absent=0';
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+    var submitBtn = form.querySelector('.form-submit');
+    var originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Enviando...';
+    msg.className = 'form-msg';
+
+    var formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data.success){
+        msg.textContent = 'Mensagem enviada! Redirecionando para o WhatsApp...';
+        msg.className = 'form-msg show ok';
+        form.reset();
+        window.open(whatsappUrl, '_blank', 'noopener');
+      } else {
+        throw new Error(data.message || 'Falha no envio');
+      }
+    })
+    .catch(function(){
+      msg.textContent = 'Não foi possível enviar agora. Tente novamente ou fale via WhatsApp.';
+      msg.className = 'form-msg show err';
+    })
+    .finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    });
+  });
+})();
+</script>
