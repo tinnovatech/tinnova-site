@@ -17,7 +17,7 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
     </div>
     <div class="form-field">
       <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" placeholder="Seu nome (opcional)">
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
     </div>
     <div class="form-field">
       <label for="telefone">Número para contato</label>
@@ -25,10 +25,10 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
     </div>
     <div class="form-field full">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Seu e-mail (opcional)">
+      <input type="email" id="email" name="email" placeholder="Seu e-mail">
     </div>
     <div class="form-field full">
-      <label for="descricao">Descrição detalhada da denúncia</label>
+      <label for="descricao">Detalhe aqui sua denúncia</label>
       <textarea id="descricao" name="descricao" placeholder="Descreva a ocorrência com o máximo de detalhes possível" required></textarea>
     </div>
     <div class="form-field full">
@@ -48,6 +48,20 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
   var form = document.getElementById('reportForm');
   var msg = document.getElementById('reportFormMsg');
   if(!form) return;
+
+  var identificacao = document.getElementById('identificacao');
+  var nome = document.getElementById('nome');
+  var email = document.getElementById('email');
+  var telefone = document.getElementById('telefone');
+
+  function updateRequiredFields(){
+    var identificado = identificacao.value === 'Sim';
+    nome.required = identificado;
+    email.required = identificado;
+    telefone.required = identificado;
+  }
+  identificacao.addEventListener('change', updateRequiredFields);
+  updateRequiredFields();
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
