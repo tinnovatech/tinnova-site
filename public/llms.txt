@@ -6,14 +6,14 @@ Entendemos seu contexto para desenvolver software sob medida, formar squads de t
 
 ## Empresa
 
-- [Home](https://tinnova.net.br/): Apresentação da Tinnova e suas soluções.
-- [Cases](https://tinnova.net.br/#cases): Projetos e resultados entregues pela Tinnova.
-- [Contato](https://tinnova.net.br/#contato): Canal para falar com a equipe comercial da Tinnova.
+- [Home](https://tinnova.com.br/): Apresentação da Tinnova e suas soluções.
+- [Cases](https://tinnova.com.br/#cases): Projetos e resultados entregues pela Tinnova.
+- [Contato](https://tinnova.com.br/#contato): Canal para falar com a equipe comercial da Tinnova.
 
 ## Soluções
 
-- [Consultoria de TI](https://tinnova.net.br/solucoes/consultoria-de-ti/): Diagnóstico técnico real, decisões de arquitetura bem fundamentadas e execução assumida do início ao fim para empresas Mid Market e Enterprise.
-- [Serviços de TI Gerenciados](https://tinnova.net.br/solucoes/servicos-de-ti-gerenciados/): Serviços de TI gerenciados para empresas com operação em nuvem: monitoramento, segurança e otimização de custo, sem montar um time DevOps interno.
-- [Outsourcing](https://tinnova.net.br/solucoes/outsourcing/): Amplie sua equipe de desenvolvimento com profissionais validados em projetos de grande porte, sem o custo e o tempo de recrutar, contratar e estruturar um time interno.
-- [POC / MVP](https://tinnova.net.br/solucoes/poc-mvp/): Desenvolvemos um MVP funcional, com o escopo mínimo necessário para testar sua ideia com usuários reais e apresentar resultado concreto a investidores.
-- [Design de Produto](https://tinnova.net.br/solucoes/design-de-produto/): Unimos pesquisa, arquitetura de informação e identidade visual para criar produtos web e mobile que refletem sua marca e funcionam de verdade para quem usa.
+- [Consultoria de TI](https://tinnova.com.br/solucoes/consultoria-de-ti/): Diagnóstico técnico real, decisões de arquitetura bem fundamentadas e execução assumida do início ao fim para empresas Mid Market e Enterprise.
+- [Serviços de TI Gerenciados](https://tinnova.com.br/solucoes/servicos-de-ti-gerenciados/): Serviços de TI gerenciados para empresas com operação em nuvem: monitoramento, segurança e otimização de custo, sem montar um time DevOps interno.
+- [Outsourcing](https://tinnova.com.br/solucoes/outsourcing/): Amplie sua equipe de desenvolvimento com profissionais validados em projetos de grande porte, sem o custo e o tempo de recrutar, contratar e estruturar um time interno.
+- [POC / MVP](https://tinnova.com.br/solucoes/poc-mvp/): Desenvolvemos um MVP funcional, com o escopo mínimo necessário para testar sua ideia com usuários reais e apresentar resultado concreto a investidores.
+- [Design de Produto](https://tinnova.com.br/solucoes/design-de-produto/): Unimos pesquisa, arquitetura de informação e identidade visual para criar produtos web e mobile que refletem sua marca e funcionam de verdade para quem usa.

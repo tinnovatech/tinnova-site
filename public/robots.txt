@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tinnova.net.br/sitemap-index.xml
+Sitemap: https://tinnova.com.br/sitemap-index.xml
