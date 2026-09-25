@@ -1,0 +1,49 @@
+# Tinnova
+
+> Consultoria de TI que aplica tecnologia, dados e inteligência ao negócio, da descoberta à entrega, para bancos, fintechs, seguradoras e empresas de freight tech.
+
+A Tinnova atua como parceira técnica e estratégica de empresas que precisam de tecnologia, dados e inteligência aplicados diretamente ao negócio. Combina consultoria de TI, formação de equipes dedicadas, desenvolvimento de produto e modernização de sistemas, com atuação forte nos setores de bancos, fintechs, seguros e freight tech.
+
+## Empresa
+
+- [Home](https://tinnova.com.br/): Apresentação da Tinnova, áreas de atuação e frentes de serviço.
+- [Cases](https://tinnova.com.br/cases/): Projetos e resultados entregues pela Tinnova.
+- [Contato](https://tinnova.com.br/contato/): Canal para falar com a equipe comercial da Tinnova.
+
+## Setores
+
+- [Bancos](https://tinnova.com.br/bancos/): Soluções de TI para o setor bancário.
+- [Fintech](https://tinnova.com.br/fintech/): Soluções de TI para fintechs.
+- [Seguros](https://tinnova.com.br/seguros/): Soluções de TI para seguradoras.
+- [Freight Tech](https://tinnova.com.br/freight-tech/): Soluções de TI para empresas de tecnologia em logística e transporte.
+
+## Soluções
+
+- [Soluções](https://tinnova.com.br/solucoes/): Página hub com as soluções de negócio oferecidas pela Tinnova.
+- [CTO as a Service](https://tinnova.com.br/cto-as-a-service/): Liderança técnica e estratégica de TI sob demanda.
+- [Monte sua Equipe](https://tinnova.com.br/monte-sua-equipe/): Formação de equipes de tecnologia dedicadas (staff augmentation).
+- [Design Sprint](https://tinnova.com.br/design-sprint/): Processo estruturado para validar hipóteses de produto rapidamente.
+- [Fase de Descobrimento](https://tinnova.com.br/fase-de-descobrimento/): Etapa de descoberta e diagnóstico antes do desenvolvimento.
+- [PoC / MVP](https://tinnova.com.br/poc-mvp/): Construção de provas de conceito e produtos mínimos viáveis.
+- [Design de Produto](https://tinnova.com.br/design-de-produto/): Desenho de produtos digitais centrados no usuário.
+- [Engenharia Reversa](https://tinnova.com.br/engenharia-reversa/): Análise e reconstrução de sistemas legados.
+
+## Serviços
+
+- [Serviços](https://tinnova.com.br/servicos/): Página hub com os serviços técnicos oferecidos pela Tinnova.
+- [Consultoria de TI](https://tinnova.com.br/consultoria-de-ti/): Consultoria estratégica e técnica em tecnologia.
+- [Serviços de TI Gerenciados](https://tinnova.com.br/servicos-de-ti-gerenciados/): Gestão contínua de infraestrutura e operações de TI.
+- [Outsourcing](https://tinnova.com.br/outsourcing/): Terceirização de equipes e operações de tecnologia.
+- [Desenvolvimento Web](https://tinnova.com.br/desenvolvimento-web/): Desenvolvimento de aplicações e sistemas web.
+- [Desenvolvimento Mobile](https://tinnova.com.br/desenvolvimento-mobile/): Desenvolvimento de aplicativos mobile.
+- [Modernização de Sistemas](https://tinnova.com.br/modernizacao-de-sistemas/): Atualização e modernização de sistemas legados.
+- [Migração Servidor Nuvem](https://tinnova.com.br/migracao-servidor-nuvem/): Migração de infraestrutura para ambientes em nuvem.
+- [Data Analytics e Inteligência Artificial](https://tinnova.com.br/data-analytics-inteligencia-artificial/): Soluções de dados e inteligência artificial aplicadas ao negócio.
+- [Java](https://tinnova.com.br/java/): Desenvolvimento de sistemas com Java.
+- [Node.js](https://tinnova.com.br/node-js/): Desenvolvimento de sistemas com Node.js.
+- [React](https://tinnova.com.br/react/): Desenvolvimento de interfaces com React.
+
+## Institucional
+
+- [Política de Privacidade](https://tinnova.com.br/politica-de-privacidade/): Tratamento de dados pessoais pela Tinnova.
+- [Central de Denúncia](https://tinnova.com.br/central-de-denuncia/): Canal de denúncias e compliance da Tinnova.
