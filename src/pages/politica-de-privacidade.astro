@@ -1,0 +1,84 @@
+---
+import SolutionLayout from '../layouts/SolutionLayout.astro';
+import { CONTACT_EMAIL } from '../consts';
+
+const CODIGO_CONDUTA_URL = '/files/Codigo-de-Conduta-e-Etica-Tinnova2026.pdf';
+---
+<SolutionLayout title="Política de Privacidade | Tinnova" description="Política de Privacidade e Proteção de Dados da Tinnova, em conformidade com a LGPD.">
+
+<!-- ============ BREADCRUMB + HERO ============ -->
+<div class="breadcrumb-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>/</span>
+    <strong>Política de Privacidade</strong>
+  </div>
+  <div class="hero2">
+    <p class="eyebrow">Legal</p>
+    <h1>Política de Privacidade e Proteção de Dados</h1>
+    <p class="lead">Na Tinnova, respeitamos a privacidade e valorizamos a confiança depositada pela clientela. Esta política descreve como as informações pessoais são coletadas, utilizadas, armazenadas e protegidas em conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+  </div>
+</div>
+
+<!-- ============ COLETA / USO / PROTECAO / DIREITOS ============ -->
+<section class="story-section">
+  <div class="story-wrap" style="text-align:left;align-items:flex-start;max-width:1000px;margin:0 auto;">
+    <div class="story-body">
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Coleta de Dados</h2>
+      <p>Coletamos apenas as informações necessárias para fornecer nossos serviços de maneira eficaz. Incluem-se nome, endereço eletrônico, telefone e dados de pagamento coletados durante cadastro, compra ou inscrição em boletins.</p>
+
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Uso de Dados</h2>
+      <p>As informações servem para disponibilizar e aprimorar serviços, processar transações, responder consultas, enviar comunicações relevantes e executar análises administrativas.</p>
+
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Proteção de Dados</h2>
+      <p>Implementamos medidas de segurança adequadas para proteger suas informações pessoais contra acesso, alteração, divulgação ou destruição não autorizados.</p>
+
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Direitos do Titular dos Dados</h2>
+      <p>Conforme a LGPD, os titulares possuem direitos de acesso, correção, portabilidade, eliminação e limitação de processamento de seus dados pessoais. Para exercer esses direitos, entre em contato através do e-mail <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Alterações nesta Política</h2>
+      <p>Atualizações periódicas serão comunicadas via site ou e-mail.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENCARREGADO DE PROTECAO DE DADOS ============ -->
+<section class="story-section" style="background:rgba(245,245,245,0.95);">
+  <div class="story-wrap" style="text-align:left;align-items:flex-start;max-width:1000px;margin:0 auto;">
+    <p class="eyebrow">Encarregado de Proteção de Dados</p>
+    <h2 style="text-align:left;">Eric Fernando Monteiro</h2>
+    <div class="story-body">
+      <p>Suas atribuições incluem aceitar reclamações, prestar esclarecimentos e orientar funcionários sobre práticas de proteção de dados pessoais. Contato: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESENTES E BRINDES ============ -->
+<section class="story-section">
+  <div class="story-wrap" style="text-align:left;align-items:flex-start;max-width:1000px;margin:0 auto;">
+    <div class="story-body">
+      <h2 style="font-size:28px;line-height:1.3;letter-spacing:-0.5px;color:var(--near-black);font-weight:600;">Recebimento de Presentes e Brindes</h2>
+
+      <p><strong>Objetivo:</strong> Manter integridade e imparcialidade nas relações comerciais, evitando conflitos de interesse.</p>
+      <p><strong>Definição:</strong> Presentes ou brindes são itens, serviços ou benefícios oferecidos sem expectativa de pagamento equivalente, incluindo produtos promocionais, hospitalidade, descontos e favores especiais.</p>
+      <p><strong>Limite de Valor:</strong> Funcionários podem aceitar presentes cujo valor não exceda 100 dólares dos EUA (ou equivalente em moeda local) por item individual.</p>
+      <p><strong>Transparência:</strong> Presentes devem ser reportados ao supervisor ou departamento de ética para avaliação de adequação.</p>
+      <p><strong>Exceções:</strong> Itens de valor simbólico (canetas, blocos de anotações com logos) podem ser aceitos sem notificação quando claramente insignificantes.</p>
+      <p><strong>Consequências para Violações:</strong> Infrações podem resultar em disciplinas variando desde advertência até demissão, conforme gravidade.</p>
+      <p style="color:var(--muted-gray);font-size:14px;">Data da última atualização: 30/04/2024</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CODIGO DE CONDUTA E ETICA (CTA download) ============ -->
+<section class="story-section" style="background:rgba(245,245,245,0.95);">
+  <div class="story-wrap">
+    <p class="eyebrow">Código de Conduta e Ética</p>
+    <h2>Consulte nosso Código de Conduta e Ética</h2>
+    <p class="story-body">Baixe o documento completo com as diretrizes de conduta e ética adotadas pela Tinnova.</p>
+    <div class="hero-actions">
+      <a href={CODIGO_CONDUTA_URL} target="_blank" rel="noopener" class="btn-primary">Baixar Código de Conduta e Ética <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+</SolutionLayout>
