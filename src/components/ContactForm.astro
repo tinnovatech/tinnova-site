@@ -1,4 +1,6 @@
 ---
+import { WEB3FORMS_ACCESS_KEY, WHATSAPP_CHAT_URL } from '../consts';
+
 interface Props {
   subject: string;
   fromName: string;
@@ -7,7 +9,7 @@ interface Props {
 const { subject, fromName, pageCode } = Astro.props;
 ---
 <form class="contato-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="155faa0d-e0f5-4ae9-8da4-0a686dec7157">
+  <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY}>
   <input type="hidden" name="subject" value={subject}>
   <input type="hidden" name="from_name" value={fromName}>
   <input type="hidden" name="form_page" value={pageCode}>
@@ -46,12 +48,11 @@ const { subject, fromName, pageCode } = Astro.props;
   <p class="form-msg" id="formMsg"></p>
 </form>
 
-<script is:inline>
+<script define:vars={{ whatsappUrl: WHATSAPP_CHAT_URL }}>
 (function(){
   var form = document.getElementById('contactForm');
   var msg = document.getElementById('formMsg');
   if(!form) return;
-  var whatsappUrl = 'https://api.whatsapp.com/send/?phone=5512978981753&text&type=phone_number&app_absent=0';
 
   form.addEventListener('submit', function(e){
     e.preventDefault();

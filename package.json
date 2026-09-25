@@ -9,6 +9,19 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^5.0.0"
-  }
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^5.18.2"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinnovatech/tinnova-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinnovatech/tinnova-site/issues"
+  },
+  "homepage": "https://github.com/tinnovatech/tinnova-site#readme"
 }

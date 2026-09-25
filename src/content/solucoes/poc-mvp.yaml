@@ -1,0 +1,60 @@
+name: "POC e MVP"
+contactLabel: "POC / MVP"
+title: "POC e MVP — Tinnova"
+description: "Desenvolvemos um MVP funcional, com o escopo mínimo necessário para testar sua ideia com usuários reais e apresentar resultado concreto a investidores."
+
+hero:
+  h1: "Valide sua ideia antes de investir no produto completo."
+  lead: "Desenvolvemos um MVP funcional, com o escopo mínimo necessário para testar sua ideia com usuários reais e apresentar resultado concreto a investidores, antes do investimento em um produto completo."
+  secondaryLinkText: "Conheça o processo"
+  image:
+    src: "/images/solucoes/poc-mvp-hero.webp"
+    alt: "Equipe validando um protótipo de produto digital"
+
+challengeText: "Investir no desenvolvimento completo de um produto antes de validar se ele resolve um problema real é o jeito mais caro de descobrir que a ideia precisa mudar."
+
+cenario:
+  h2: "Quando a ideia ainda não tem validação real de mercado."
+  body:
+    - "Startups e áreas de inovação frequentemente têm uma ideia de produto bem definida no papel, mas sem confirmação de que o mercado realmente vai usar e pagar por ela."
+    - "Ir direto para o desenvolvimento completo, sem testar a proposta de valor com usuários reais, significa investir tempo e dinheiro em funcionalidades que podem não importar para o público alvo."
+  image:
+    src: "/images/solucoes/poc-mvp-cenario.webp"
+    alt: "Detalhe de elementos de prototipagem e testes de produto"
+
+solucao:
+  lines:
+    - "Um produto mínimo,"
+    - "testável com usuários reais."
+  body:
+    - "A Tinnova desenvolve um MVP com as funcionalidades essenciais para validar sua proposta de valor, coletar os primeiros feedbacks reais e apresentar um produto ativo, não só uma ideia, a investidores e clientes."
+
+comoFazemos:
+  lines:
+    - "Da descoberta ao lançamento"
+    - "e evolução contínua."
+  body:
+    - "Na fase de descoberta, finalizamos requisitos, identificamos obstáculos e validamos com você os wireframes e a jornada do usuário antes de qualquer linha de código."
+    - "O design do produto define conceitos visuais alinhados aos objetivos de negócio, e o desenvolvimento segue metodologia ágil, com testes contínuos ao longo do processo."
+    - "Depois do lançamento, acompanhamos indicadores reais de uso para orientar as próximas atualizações. O MVP é o começo, não o destino final do produto."
+
+beneficios:
+  h2: "O que muda com um MVP validado."
+  subtitle: "Cada etapa do processo acima reduz um risco específico de quem ainda não validou a ideia de produto."
+  items:
+    - "Validação da ideia com investimento controlado, antes do produto completo."
+    - "Lançamento mais rápido que a concorrência, com funcionalidades suficientes para conquistar os primeiros usuários."
+    - "Decisão sobre os próximos passos baseada em uso real, não em suposição."
+    - "Produto ativo para apresentar a investidores, não apenas uma ideia no papel."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Startups e áreas de inovação"
+    body: "Startups e áreas de inovação que precisam validar uma ideia de produto digital antes do investimento completo."
+  - tag: "Conduzido pela Tinnova"
+    h3: "Tecnologia aplicada ao negócio"
+    body: "A Tinnova combina consultoria e capacidade técnica para conectar contexto de negócio, dados e execução, sem entregar tecnologia pela tecnologia."
+
+proximoPasso:
+  h2: "Vamos avaliar se sua ideia está pronta para virar um MVP."
+  body: "Conte brevemente a ideia e o público que você quer validar. A Tinnova avalia o escopo mínimo antes de propor o plano de desenvolvimento."

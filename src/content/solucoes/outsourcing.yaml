@@ -1,0 +1,60 @@
+name: "Outsourcing"
+contactLabel: "Outsourcing"
+title: "Outsourcing — Tinnova"
+description: "Amplie sua equipe de desenvolvimento com profissionais validados em projetos de grande porte, sem o custo e o tempo de recrutar, contratar e estruturar um time interno."
+
+hero:
+  h1: "Capacidade técnica pronta, sem montar um time do zero."
+  lead: "Amplie sua equipe de desenvolvimento com profissionais validados em projetos de grande porte, sem o custo e o tempo de recrutar, contratar e estruturar um time interno."
+  secondaryLinkText: "Conheça o processo"
+  image:
+    src: "/images/solucoes/outsourcing-hero.webp"
+    alt: "Equipe reunida planejando um projeto de desenvolvimento"
+
+challengeText: "Montar um time interno de tecnologia do zero exige recrutamento especializado, estruturação de processo e tempo, recursos que a maioria das empresas não tem sobrando quando a demanda já está na porta."
+
+cenario:
+  h2: "Quando a demanda de desenvolvimento chega mais rápido do que a capacidade de contratar."
+  body:
+    - "Contratar um time interno de tecnologia do zero é um projeto em si: exige seleção técnica criteriosa, estruturação de processo de trabalho e tempo até a equipe estar realmente produtiva."
+    - "Enquanto isso, o backlog de desenvolvimento continua crescendo, e a alternativa de sobrecarregar o time atual ou postergar entregas tem custo real para o negócio."
+  image:
+    src: "/images/solucoes/outsourcing-cenario.webp"
+    alt: "Detalhe de mãos em execução técnica no dia a dia de um projeto"
+
+solucao:
+  lines:
+    - "Um squad técnico validado,"
+    - "integrado ao seu processo."
+  body:
+    - "A Tinnova disponibiliza profissionais de desenvolvimento já validados em projetos para empresas de grande porte, funcionando como extensão do seu time, com menor custo e tempo de adaptação do que uma contratação própria."
+
+comoFazemos:
+  lines:
+    - "Do primeiro contato"
+    - "à entrega em sprints."
+  body:
+    - "Entendemos o escopo e o perfil técnico necessário no primeiro contato, com estimativa preliminar em até 24 horas."
+    - "Na fase de descoberta, mapeamos requisitos, arquitetura e integrações necessárias, montando o squad com o perfil técnico certo para o projeto."
+    - "O desenvolvimento roda em sprints de duas semanas, com controle de qualidade contínuo e acompanhamento até a implantação e o suporte pós lançamento."
+
+beneficios:
+  h2: "O que muda com um squad pronto."
+  subtitle: "Cada etapa do processo acima resolve um risco específico de quem precisa ampliar capacidade técnica rápido."
+  items:
+    - "Foco no core business, sem gastar tempo interno recrutando e estruturando um time técnico."
+    - "Redução de custo frente à contratação própria, com qualidade técnica validada em projetos de grande porte."
+    - "Capacidade de escalar o time rapidamente, sem o tempo de adaptação de uma contratação direta."
+    - "Squad multidisciplinar (frontend, backend, QA, DevOps) conforme a necessidade do projeto."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas que precisam ampliar capacidade técnica rapidamente"
+    body: "Empresas que precisam ampliar capacidade técnica rapidamente, sem os custos e o tempo de uma contratação própria completa."
+  - tag: "Conduzido pela Tinnova"
+    h3: "Tecnologia aplicada ao negócio"
+    body: "A Tinnova combina consultoria e capacidade técnica para conectar contexto de negócio, dados e execução, sem entregar tecnologia pela tecnologia."
+
+proximoPasso:
+  h2: "Vamos avaliar se um squad técnico faz sentido para o seu momento."
+  body: "Conte brevemente a demanda atual do seu time. A Tinnova avalia o escopo antes de montar o squad ideal para o projeto."

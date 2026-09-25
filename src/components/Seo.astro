@@ -1,0 +1,50 @@
+---
+import { SITE_NAME, SOCIAL_LINKS, CONTACT_EMAIL, WHATSAPP_NUMBER, COMPANY } from '../consts';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { title, description, image = '/images/hero-banner.webp' } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: Astro.site?.toString(),
+  logo: new URL('/logos/tinnova-logo.svg', Astro.site).toString(),
+  email: CONTACT_EMAIL,
+  telephone: `+${WHATSAPP_NUMBER}`,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: COMPANY.addressLines[0],
+    addressLocality: 'São José dos Campos',
+    addressRegion: 'SP',
+    addressCountry: 'BR',
+  },
+  sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.instagram, SOCIAL_LINKS.blog],
+};
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:image" content={imageURL} />
+<meta property="og:locale" content="pt_BR" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />

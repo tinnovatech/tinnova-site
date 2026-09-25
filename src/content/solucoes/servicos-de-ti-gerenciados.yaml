@@ -1,0 +1,62 @@
+name: "Serviços de TI Gerenciados"
+contactLabel: "Serviços de TI Gerenciados"
+title: "Serviços de TI Gerenciados para Empresas | Tinnova"
+description: "Serviços de TI gerenciados para empresas com operação em nuvem: monitoramento, segurança e otimização de custo, sem montar um time DevOps interno."
+
+hero:
+  h1: "Operação de infraestrutura em nuvem para quem não tem um time DevOps dedicado."
+  lead: "Monitoramento contínuo, segurança e otimização de custo da sua infraestrutura AWS, conduzidos por quem acompanha o ambiente todos os dias, não só quando algo quebra."
+  secondaryLinkText: "Conheça o que fazemos"
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-hero.webp"
+    alt: "Painel de dados e indicadores operacionais"
+
+challengeText: "Manter uma infraestrutura em nuvem seguindo boas práticas de custo, segurança e desempenho exige atenção constante. A maioria dos times de desenvolvimento não tem tempo nem escopo para isso, e o resultado comum é custo AWS fora do previsto ou brecha de segurança descoberta tarde."
+
+cenario:
+  h2: "Quando o time de desenvolvimento também precisa cuidar da infraestrutura."
+  body:
+    - "Empresas que migraram para nuvem ganham escala, mas herdam uma responsabilidade nova: manter essa infraestrutura otimizada e segura no dia a dia. Sem um time dedicado a isso, essa tarefa cai para o time de desenvolvimento, dividido entre construir produto e cuidar de servidor."
+    - "O resultado mais comum é custo de nuvem que cresce sem controle, porque ninguém tem tempo de revisar o uso de recursos, e vulnerabilidade de segurança que só aparece quando já virou incidente."
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-cenario.webp"
+    alt: "Visualização abstrata de dados representando análise e inteligência aplicada"
+
+solucao:
+  lines:
+    - "Gestão contínua da infraestrutura,"
+    - "não um chamado só quando dá problema."
+  body:
+    - "A Tinnova assume a operação da infraestrutura em nuvem como extensão do seu time: implantação, monitoramento, segurança e otimização de custo AWS, com acompanhamento contínuo em vez de suporte pontual."
+    - "Isso libera o time de desenvolvimento interno para focar no produto, sem abrir mão de ter alguém responsável pela saúde da infraestrutura todos os dias."
+    - "O problema raramente é a nuvem em si. É não ter ninguém olhando para ela com constância."
+
+comoFazemos:
+  lines:
+    - "Do diagnóstico do ambiente"
+    - "ao monitoramento contínuo."
+  body:
+    - "Começamos avaliando o ambiente de nuvem atual: uso de recursos, configuração de segurança, práticas de CI/CD e pontos de desperdício de custo."
+    - "A partir daí, implementamos as correções prioritárias e ajustamos o ambiente às boas práticas de infraestrutura em nuvem, incluindo virtualização, backup e conformidade com princípios de infraestrutura como código."
+    - "O acompanhamento continua depois do ajuste inicial, com monitoramento de desempenho e recomendações periódicas de melhoria, não só uma entrega única."
+
+beneficios:
+  h2: "O que muda com a operação gerenciada."
+  subtitle: "Cada etapa do método acima resolve um risco específico que empresas com infraestrutura em nuvem sentem na prática."
+  items:
+    - "Custo de infraestrutura mais previsível, com otimização contínua de uso da AWS."
+    - "Segurança e monitoramento constantes, sem depender de um chamado reativo."
+    - "Time de desenvolvimento interno livre para focar no produto, não na operação de servidor."
+    - "Ambiente pronto para escalar sem precisar montar uma equipe DevOps própria."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas com infraestrutura em nuvem (AWS) já em operação"
+    body: "Empresas com infraestrutura em nuvem (AWS) já em operação, sem um time interno dedicado a monitoramento, segurança e otimização de custo."
+  - tag: "Conduzido pela Tinnova"
+    h3: "Tecnologia aplicada ao negócio"
+    body: "A Tinnova combina consultoria e capacidade técnica para conectar contexto de negócio, dados e execução, sem entregar tecnologia pela tecnologia."
+
+proximoPasso:
+  h2: "Vamos avaliar se sua infraestrutura em nuvem está otimizada de verdade."
+  body: "Conte brevemente o ambiente atual (nuvem usada, tamanho da operação, principal dor). A Tinnova avalia o cenário antes de recomendar qualquer mudança."

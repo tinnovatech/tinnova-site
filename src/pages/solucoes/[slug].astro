@@ -1,0 +1,138 @@
+---
+import { getCollection } from 'astro:content';
+import SolutionLayout from '../../layouts/SolutionLayout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('solucoes');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const s = entry.data;
+---
+<SolutionLayout title={s.title} description={s.description} image={s.hero.image.src}>
+
+<!-- ============ BREADCRUMB + HERO ============ -->
+<div class="breadcrumb-wrap">
+  <div class="breadcrumb">
+    <a href="/">Home</a><span>/</span>
+    <a href="/">Serviços</a><span>/</span>
+    <strong>{s.name}</strong>
+  </div>
+  <div class="hero2">
+    <p class="eyebrow">{s.name}</p>
+    <h1>{s.hero.h1}</h1>
+    <p class="lead">{s.hero.lead}</p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn-primary">Fale com um especialista</a>
+      <a href="#cenario" class="text-link" style="color:var(--navy);">{s.hero.secondaryLinkText} <span aria-hidden="true" style="color:var(--purple);">↓</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO MEDIA ============ -->
+<div class="hero-media">
+  <img src={s.hero.image.src} alt={s.hero.image.alt}>
+</div>
+
+<!-- ============ O DESAFIO ============ -->
+<section class="challenge">
+  <div class="challenge-wrap">
+    <p class="challenge-label">O desafio</p>
+    <p class="challenge-text">{s.challengeText}</p>
+  </div>
+</section>
+
+<!-- ============ CENARIO ============ -->
+<section class="cenario" id="cenario">
+  <div class="cenario-wrap">
+    <div class="cenario-copy">
+      <p class="eyebrow">Cenário</p>
+      <h2>{s.cenario.h2}</h2>
+      <div class="body">
+        {s.cenario.body.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+      <a href="#contato" class="btn-primary">Fale com um especialista</a>
+    </div>
+    <div class="cenario-media">
+      <img src={s.cenario.image.src} alt={s.cenario.image.alt}>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A SOLUCAO ============ -->
+<section class="story-section">
+  <div class="story-wrap">
+    <p class="eyebrow">A solução</p>
+    <h2>{s.solucao.lines[0]}<br />{s.solucao.lines[1]}</h2>
+    <div class="story-body">
+      {s.solucao.body.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FAZEMOS ============ -->
+<section class="story-section">
+  <div class="story-wrap">
+    <p class="eyebrow">Como fazemos</p>
+    <h2>{s.comoFazemos.lines[0]}<br />{s.comoFazemos.lines[1]}</h2>
+    <div class="story-body">
+      {s.comoFazemos.body.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
+
+<!-- ============ OS BENEFICIOS ============ -->
+<section class="beneficios">
+  <div class="beneficios-wrap">
+    <div class="beneficios-head">
+      <p class="eyebrow">Os benefícios</p>
+      <h2>{s.beneficios.h2}</h2>
+      <p>{s.beneficios.subtitle}</p>
+    </div>
+    <div class="beneficios-grid">
+      {s.beneficios.items.map((text, i) => (
+        <div class="beneficio">
+          <img src={`/logos/solucoes/icon-beneficio-${i + 1}.svg`} alt="" />
+          <p>{text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO (about + formulário) ============ -->
+<section class="contato-final" id="contato">
+  <div class="about-panel">
+    {s.aboutCards.map((card) => (
+      <div class="about-card">
+        <div class="label">
+          <span class="tag">{card.tag}</span>
+          <h3>{card.h3}</h3>
+        </div>
+        <p>{card.body}</p>
+      </div>
+    ))}
+  </div>
+
+  <div class="final-row">
+    <div class="final-copy">
+      <p class="eyebrow">Próximo passo</p>
+      <h2>{s.proximoPasso.h2}</h2>
+      <p>{s.proximoPasso.body}</p>
+    </div>
+    <div class="final-form-wrap">
+      <ContactForm
+        subject={`Novo contato pelo site Tinnova ${s.contactLabel}`}
+        fromName={`Site Tinnova ${s.contactLabel}`}
+        pageCode={entry.id}
+      />
+    </div>
+  </div>
+</section>
+
+</SolutionLayout>

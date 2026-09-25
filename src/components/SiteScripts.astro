@@ -1,0 +1,59 @@
+<script is:inline>
+(function(){
+  // ---- Desktop dropdowns ----
+  var dropdowns = document.querySelectorAll('.nav-item[data-dropdown]');
+  dropdowns.forEach(function(item){
+    var btn = item.querySelector('button');
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var isOpen = item.classList.contains('open');
+      dropdowns.forEach(function(d){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); });
+      if(!isOpen){
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+  document.addEventListener('click', function(){
+    dropdowns.forEach(function(d){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); });
+  });
+  document.querySelectorAll('[data-close-dropdown]').forEach(function(a){
+    a.addEventListener('click', function(){
+      dropdowns.forEach(function(d){ d.classList.remove('open'); });
+    });
+  });
+
+  // ---- Mobile menu open/close ----
+  var overlay = document.getElementById('mobileMenuOverlay');
+  var openBtn = document.getElementById('mobileMenuOpen');
+  var closeBtn = document.getElementById('mobileMenuClose');
+  if(openBtn){
+    openBtn.addEventListener('click', function(){
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  if(closeBtn){
+    closeBtn.addEventListener('click', closeMobileMenu);
+  }
+  function closeMobileMenu(){
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-close-mobile-menu]').forEach(function(a){
+    a.addEventListener('click', closeMobileMenu);
+  });
+
+  // ---- Mobile accordion ----
+  document.querySelectorAll('.mobile-accordion-item[data-accordion]').forEach(function(item){
+    var btn = item.querySelector('button');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.mobile-accordion-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!isOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // Contact form submit handling lives in components/ContactForm.astro
+})();
+</script>

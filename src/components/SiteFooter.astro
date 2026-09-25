@@ -1,14 +1,17 @@
+---
+import { CONTACT_EMAIL, WHATSAPP_URL, WHATSAPP_DISPLAY, SOCIAL_LINKS, COMPANY } from '../consts';
+---
 <footer class="site-footer">
   <div class="footer-wrap">
     <div class="footer-top"><img src="/logos/tinnova-logo-white.svg" alt="Tinnova"><p>Tecnologia aplicada ao negócio, com consultoria e capacidade técnica.</p></div>
     <div class="footer-main">
-      <div class="footer-contact"><span class="title">Atendimento Tinnova:</span><div class="details"><p><a href="mailto:comercial@tinnova.com.br">E-mail: comercial@tinnova.com.br</a></p><p><a href="https://wa.me/5512978981753" target="_blank" rel="noopener">Telefone: +55 12 9 7898-1753 (whatsapp)</a></p></div><a href="https://wa.me/5512978981753" target="_blank" rel="noopener" class="btn-pill" style="width:fit-content;">Fale Conosco <span aria-hidden="true">↗</span></a><div class="footer-legal-block"><p class="addr">PIT - Parque tecnológico de São José dos Campos<br>São Paulo – Brasil</p><p class="cnpj">CNPJ 17.267.130/0001-98</p></div></div>
+      <div class="footer-contact"><span class="title">Atendimento Tinnova:</span><div class="details"><p><a href={`mailto:${CONTACT_EMAIL}`}>E-mail: {CONTACT_EMAIL}</a></p><p><a href={WHATSAPP_URL} target="_blank" rel="noopener">Telefone: {WHATSAPP_DISPLAY} (whatsapp)</a></p></div><a href={WHATSAPP_URL} target="_blank" rel="noopener" class="btn-pill" style="width:fit-content;">Fale Conosco <span aria-hidden="true">↗</span></a><div class="footer-legal-block"><p class="addr">{COMPANY.addressLines[0]}<br>{COMPANY.addressLines[1]}</p><p class="cnpj">CNPJ {COMPANY.cnpj}</p></div></div>
       <div class="footer-cols">
-        <div class="footer-col"><strong>Institucional</strong><a href="/#cases">Cases</a><a href="https://blog.tinnova.com.br/" target="_blank" rel="noopener">Blog</a><a href="https://tinnova.inhire.app/vagas/" target="_blank" rel="noopener">Carreiras</a></div>
+        <div class="footer-col"><strong>Institucional</strong><a href="/#cases">Cases</a><a href={SOCIAL_LINKS.blog} target="_blank" rel="noopener">Blog</a><a href={SOCIAL_LINKS.carreiras} target="_blank" rel="noopener">Carreiras</a></div>
         <div class="footer-col"><strong>Soluções</strong><a href="/solucoes/consultoria-de-ti/">Consultoria de TI</a><a href="/solucoes/outsourcing/">Outsourcing</a><a href="/solucoes/poc-mvp/">POC / MVP</a><a href="/solucoes/design-de-produto/">Design de Produto</a><a href="/solucoes/servicos-de-ti-gerenciados/">Serviços de TI Gerenciados</a></div>
-        <div class="footer-col"><strong>Contato</strong><a href="#contato">Fale conosco</a><a href="https://www.linkedin.com/company/tinnovatech/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tinnovatech" target="_blank" rel="noopener">Instagram</a></div>
+        <div class="footer-col"><strong>Contato</strong><a href="#contato">Fale conosco</a><a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener">LinkedIn</a><a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener">Instagram</a></div>
       </div>
     </div>
-    <p class="footer-bottom">Tinnova Software solutions S.A.- Copyright © 2026 - Todos os direitos reservados</p>
+    <p class="footer-bottom">{COMPANY.legalName}- Copyright © 2026 - Todos os direitos reservados</p>
   </div>
 </footer>
