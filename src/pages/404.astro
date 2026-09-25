@@ -1,0 +1,43 @@
+---
+import '../styles/base.css';
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página não encontrada | Tinnova</title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="3;url=/">
+<link rel="icon" type="image/svg+xml" href="/logos/tinnova-symbol.svg">
+<style>
+  .not-found{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    text-align:center;
+    padding:24px;
+  }
+  .not-found img{height:40px;}
+  .not-found h1{font-weight:500;font-size:55px;line-height:1.1;letter-spacing:-3.06px;color:var(--near-black);}
+  .not-found p{font-size:18px;color:var(--muted-gray);max-width:480px;width:100%;box-sizing:border-box;}
+  @media (max-width:880px){
+    .not-found h1{font-size:36px;letter-spacing:-1px;}
+  }
+</style>
+</head>
+<body>
+<div class="not-found">
+  <img src="/logos/tinnova-logo.svg" alt="Tinnova">
+  <h1>404</h1>
+  <p class="eyebrow">Página não encontrada</p>
+  <p>Você será redirecionado para a home em instantes. Se isso não acontecer, <a href="/" style="color:var(--purple);font-weight:700;">clique aqui</a>.</p>
+</div>
+<script>
+  window.location.replace('/');
+</script>
+</body>
+</html>
