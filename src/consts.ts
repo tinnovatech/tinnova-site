@@ -3,6 +3,7 @@ export const SITE_NAME = 'Tinnova';
 export const GTM_ID = 'GTM-NPWS7CX';
 
 export const WEB3FORMS_ACCESS_KEY = '155faa0d-e0f5-4ae9-8da4-0a686dec7157';
+export const WEB3FORMS_DENUNCIA_ACCESS_KEY = '91503101-9fba-4482-a05f-6f43ec500cf9';
 
 export const WHATSAPP_NUMBER = '5512978981753';
 export const WHATSAPP_DISPLAY = '+55 12 9 7898-1753';

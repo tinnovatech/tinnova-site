@@ -187,7 +187,7 @@ h1,h2,h3,p{margin:0;}
 .form-field{display:flex;flex-direction:column;gap:6px;}
 .form-field.full{grid-column:1/-1;}
 .form-field label{font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:var(--near-black);text-align:left;}
-.form-field input,.form-field textarea{
+.form-field input,.form-field textarea,.form-field select{
   font-family:'Poppins',sans-serif;
   font-size:14px;
   color:var(--near-black);
@@ -198,7 +198,7 @@ h1,h2,h3,p{margin:0;}
   outline:none;
 }
 .form-field input::placeholder,.form-field textarea::placeholder{color:#9a9fb3;}
-.form-field input:focus,.form-field textarea:focus{border-bottom-color:var(--purple);}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{border-bottom-color:var(--purple);}
 .form-field textarea{resize:vertical;min-height:70px;}
 .form-footer{
   display:flex;
@@ -243,7 +243,7 @@ h1,h2,h3,p{margin:0;}
 .footer-legal-block .addr{font-size:14px;}
 .footer-legal-block .cnpj{font-size:11px;}
 .footer-cols{display:flex;gap:clamp(32px,4vw,72px);flex-wrap:nowrap;flex:1 1 0;min-width:0;}
-.footer-col{display:flex;flex-direction:column;gap:20px;min-width:110px;flex:1 1 110px;}
+.footer-col{display:flex;flex-direction:column;gap:20px;min-width:0;flex:1 1 0;}
 .footer-col strong{color:var(--ice-blue);font-weight:600;font-size:15px;letter-spacing:1.32px;text-transform:uppercase;}
 .footer-col a{color:var(--ice-blue);font-size:15px;}
 .footer-col a:hover{opacity:.8;text-decoration:underline;}

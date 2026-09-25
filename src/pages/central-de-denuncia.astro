@@ -1,5 +1,6 @@
 ---
 import SolutionLayout from '../layouts/SolutionLayout.astro';
+import ReportForm from '../components/ReportForm.astro';
 
 const OBJETIVOS = [
   { h2: 'Detecção e Prevenção', body: 'Identificar riscos e vulnerabilidades que possam levar a comportamentos antiéticos ou ilegais.' },
@@ -51,41 +52,13 @@ const OBJETIVOS = [
   </div>
 </section>
 
-<!-- ============ FORMULARIO (placeholder) ============ -->
+<!-- ============ FORMULARIO ============ -->
 <section class="story-section" id="formulario">
   <div class="story-wrap">
     <p class="eyebrow">Formulário de Denúncia</p>
     <h2>Registre sua denúncia</h2>
     <div class="final-form-wrap" style="margin-top:24px;width:100%;max-width:640px;">
-      <div class="contato-form">
-        <p style="font-size:13px;color:var(--muted-gray);margin-bottom:18px;">Formulário em desenvolvimento — em breve disponível.</p>
-        <div class="form-grid">
-          <div class="form-field full">
-            <label>Deseja se identificar?</label>
-            <input type="text" placeholder="Sim / Não" disabled>
-          </div>
-          <div class="form-field">
-            <label>Nome</label>
-            <input type="text" placeholder="Seu nome" disabled>
-          </div>
-          <div class="form-field">
-            <label>Número para contato</label>
-            <input type="text" placeholder="Telefone" disabled>
-          </div>
-          <div class="form-field full">
-            <label>E-mail</label>
-            <input type="email" placeholder="seu@email.com" disabled>
-          </div>
-          <div class="form-field full">
-            <label>Descrição detalhada da denúncia</label>
-            <textarea placeholder="Descreva a ocorrência com o máximo de detalhes possível" disabled></textarea>
-          </div>
-          <div class="form-field full">
-            <label>Anexo de evidências</label>
-            <input type="file" disabled>
-          </div>
-        </div>
-      </div>
+      <ReportForm />
     </div>
   </div>
 </section>

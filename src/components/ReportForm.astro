@@ -1,0 +1,90 @@
+---
+import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
+---
+<form class="contato-form" id="reportForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+  <input type="hidden" name="access_key" value={WEB3FORMS_DENUNCIA_ACCESS_KEY}>
+  <input type="hidden" name="subject" value="Nova denúncia pelo site Tinnova - Central de Denúncia">
+  <input type="hidden" name="from_name" value="Site Tinnova - Central de Denúncia">
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div class="form-grid">
+    <div class="form-field full">
+      <label for="identificacao">Deseja se identificar?</label>
+      <select id="identificacao" name="identificacao" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não, prefiro permanecer anônimo(a)</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome (opcional)">
+    </div>
+    <div class="form-field">
+      <label for="telefone">Número para contato</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 56789">
+    </div>
+    <div class="form-field full">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail (opcional)">
+    </div>
+    <div class="form-field full">
+      <label for="descricao">Descrição detalhada da denúncia</label>
+      <textarea id="descricao" name="descricao" placeholder="Descreva a ocorrência com o máximo de detalhes possível" required></textarea>
+    </div>
+    <div class="form-field full">
+      <label for="anexo">Anexo de evidências</label>
+      <input type="file" id="anexo" name="attachment">
+    </div>
+  </div>
+  <div class="form-footer">
+    <button type="submit" class="form-submit">Enviar denúncia <span aria-hidden="true">↗</span></button>
+    <small>Sua denúncia é confidencial e você está protegido(a) contra retaliações.</small>
+  </div>
+  <p class="form-msg" id="reportFormMsg"></p>
+</form>
+
+<script>
+(function(){
+  var form = document.getElementById('reportForm');
+  var msg = document.getElementById('reportFormMsg');
+  if(!form) return;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+    var submitBtn = form.querySelector('.form-submit');
+    var originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Enviando...';
+    msg.className = 'form-msg';
+
+    var formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data.success){
+        msg.textContent = 'Denúncia enviada com sucesso. Obrigado por contribuir com a integridade da Tinnova.';
+        msg.className = 'form-msg show ok';
+        form.reset();
+      } else {
+        throw new Error(data.message || 'Falha no envio');
+      }
+    })
+    .catch(function(){
+      msg.textContent = 'Não foi possível enviar agora. Tente novamente mais tarde.';
+      msg.className = 'form-msg show err';
+    })
+    .finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    });
+  });
+})();
+</script>
