@@ -3,6 +3,7 @@ import '../styles/base.css';
 import Seo from '../components/Seo.astro';
 import GtmHead from '../components/GtmHead.astro';
 import GtmBody from '../components/GtmBody.astro';
+import ClarityTag from '../components/ClarityTag.astro';
 import SiteScripts from '../components/SiteScripts.astro';
 import SiteNav from '../components/SiteNav.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -22,6 +23,7 @@ const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 <head>
 <LangDetectScript />
 <GtmHead />
+<ClarityTag />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <Seo title={title} description={description} image={image} />

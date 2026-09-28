@@ -2,6 +2,8 @@ export const SITE_NAME = 'Tinnova';
 
 export const GTM_ID = 'GTM-NPWS7CX';
 
+export const CLARITY_ID = 'x0vi87yg1i';
+
 export const WEB3FORMS_ACCESS_KEY = '155faa0d-e0f5-4ae9-8da4-0a686dec7157';
 export const WEB3FORMS_DENUNCIA_ACCESS_KEY = '91503101-9fba-4482-a05f-6f43ec500cf9';
 
