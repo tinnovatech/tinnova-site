@@ -6,6 +6,8 @@ import GtmBody from '../components/GtmBody.astro';
 import SiteScripts from '../components/SiteScripts.astro';
 import SiteNav from '../components/SiteNav.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import LangDetectScript from '../components/LangDetectScript.astro';
+import { DEFAULT_LOCALE, LOCALE_META, type Locale } from '../i18n/config';
 
 interface Props {
   title: string;
@@ -13,10 +15,12 @@ interface Props {
   image?: string;
 }
 const { title, description, image } = Astro.props;
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 ---
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang={LOCALE_META[currentLocale].hreflang}>
 <head>
+<LangDetectScript />
 <GtmHead />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

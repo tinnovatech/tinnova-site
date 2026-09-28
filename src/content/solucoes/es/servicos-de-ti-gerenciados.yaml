@@ -1,0 +1,62 @@
+name: "Servicios de TI Gestionados"
+contactLabel: "Servicios de TI Gestionados"
+title: "Servicios de TI Gestionados para Empresas | Tinnova"
+description: "Servicios de TI gestionados para empresas con operación en la nube: monitoreo, seguridad y optimización de costos, sin armar un equipo DevOps interno."
+
+hero:
+  h1: "Operación de infraestructura en la nube para quien no tiene un equipo DevOps dedicado."
+  lead: "Monitoreo continuo, seguridad y optimización de costos de tu infraestructura AWS, a cargo de quienes siguen el entorno todos los días, no solo cuando algo falla."
+  secondaryLinkText: "Conoce lo que hacemos"
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-hero.webp"
+    alt: "Panel de datos e indicadores operacionales"
+
+challengeText: "Mantener una infraestructura en la nube siguiendo buenas prácticas de costo, seguridad y desempeño exige atención constante. La mayoría de los equipos de desarrollo no tiene tiempo ni alcance para eso, y el resultado habitual es un costo de AWS fuera de lo previsto o una brecha de seguridad descubierta tarde."
+
+cenario:
+  h2: "Cuando el equipo de desarrollo también tiene que cuidar la infraestructura."
+  body:
+    - "Las empresas que migraron a la nube ganan escala, pero heredan una responsabilidad nueva: mantener esa infraestructura optimizada y segura en el día a día. Sin un equipo dedicado a eso, esa tarea recae en el equipo de desarrollo, dividido entre construir el producto y cuidar el servidor."
+    - "El resultado más común es un costo de nube que crece sin control, porque nadie tiene tiempo de revisar el uso de recursos, y una vulnerabilidad de seguridad que solo aparece cuando ya se convirtió en un incidente."
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-cenario.webp"
+    alt: "Visualización abstracta de datos que representa análisis e inteligencia aplicada"
+
+solucao:
+  lines:
+    - "Gestión continua de la infraestructura,"
+    - "no un ticket solo cuando hay un problema."
+  body:
+    - "Tinnova asume la operación de la infraestructura en la nube como extensión de tu equipo: implementación, monitoreo, seguridad y optimización de costos de AWS, con seguimiento continuo en lugar de soporte puntual."
+    - "Esto libera al equipo de desarrollo interno para enfocarse en el producto, sin renunciar a tener a alguien responsable de la salud de la infraestructura todos los días."
+    - "El problema rara vez es la nube en sí. Es no tener a nadie mirándola con constancia."
+
+comoFazemos:
+  lines:
+    - "Del diagnóstico del entorno"
+    - "al monitoreo continuo."
+  body:
+    - "Comenzamos evaluando el entorno de nube actual: uso de recursos, configuración de seguridad, prácticas de CI/CD y puntos de desperdicio de costo."
+    - "A partir de ahí, implementamos las correcciones prioritarias y ajustamos el entorno a las buenas prácticas de infraestructura en la nube, incluyendo virtualización, respaldo y conformidad con los principios de infraestructura como código."
+    - "El seguimiento continúa después del ajuste inicial, con monitoreo de desempeño y recomendaciones periódicas de mejora, no solo una entrega única."
+
+beneficios:
+  h2: "Lo que cambia con la operación gestionada."
+  subtitle: "Cada etapa del método anterior resuelve un riesgo específico que sienten en la práctica las empresas con infraestructura en la nube."
+  items:
+    - "Costo de infraestructura más predecible, con optimización continua del uso de AWS."
+    - "Seguridad y monitoreo constantes, sin depender de un ticket reactivo."
+    - "Equipo de desarrollo interno libre para enfocarse en el producto, no en la operación del servidor."
+    - "Entorno listo para escalar sin necesidad de armar un equipo DevOps propio."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas con infraestructura en la nube (AWS) ya en operación"
+    body: "Empresas con infraestructura en la nube (AWS) ya en operación, sin un equipo interno dedicado al monitoreo, la seguridad y la optimización de costos."
+  - tag: "Conducido por Tinnova"
+    h3: "Tecnología aplicada al negocio"
+    body: "Tinnova combina consultoría y capacidad técnica para conectar contexto de negocio, datos y ejecución, sin entregar tecnología por la tecnología misma."
+
+proximoPasso:
+  h2: "Evaluemos si tu infraestructura en la nube está realmente optimizada."
+  body: "Cuéntanos brevemente el entorno actual (nube utilizada, tamaño de la operación, principal dolor). Tinnova evalúa el escenario antes de recomendar cualquier cambio."

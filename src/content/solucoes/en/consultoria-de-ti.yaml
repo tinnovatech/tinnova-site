@@ -1,0 +1,61 @@
+name: "IT Consulting"
+contactLabel: "IT Consulting"
+title: "IT Consulting — Tinnova"
+description: "Real technical diagnosis, well-grounded architecture decisions, and end-to-end execution for Mid Market and Enterprise companies."
+
+hero:
+  h1: "IT Consulting for those who need to evolve technology without stopping operations."
+  lead: "Real technical diagnosis, well-grounded architecture decisions, and end-to-end execution for Mid Market and Enterprise companies with their own IT structure, but without the spare capacity or specialization to handle everything at once."
+  secondaryLinkText: "Learn More"
+  image:
+    src: "/images/solucoes/consultoria-de-ti-hero.webp"
+    alt: "Technical team in an architecture and IT roadmap meeting"
+
+challengeText: "Most IT consulting firms deliver a diagnosis and a recommendation. Few stay to make sure the change actually happens, with the internal team sustaining operations at the same time."
+
+cenario:
+  h2: "When the IT structure grows faster than the capacity to decide about it."
+  body:
+    - "Companies with critical operations rarely lack technology — they lack the time and clarity to make decisions about it. A backed-up backlog, legacy systems nobody wants to touch, an architecture that grew by accumulation rather than by design. The internal team is already in sustainment mode, with no room to stop and rethink the structure as a whole."
+    - "Hiring yet another consulting firm just to hear \"rewrite everything\" or \"migrate to the cloud\" without understanding the business context only adds risk to an already fragile scenario. What's missing isn't a technical opinion — it's someone who understands the environment before recommending any change, and who stays involved after the recommendation."
+  image:
+    src: "/images/solucoes/consultoria-de-ti-cenario.webp"
+    alt: "Server structure and IT infrastructure in operation"
+
+solucao:
+  lines:
+    - "Consulting that takes part in the decision"
+    - "and the execution, not just the report."
+  body:
+    - "Tinnova's IT consulting combines a real technical assessment of the environment — architecture, dependencies, technical debt, security risks, and scale — with the ability to execute the recommended change, with the same team that ran the diagnosis."
+    - "This avoids the market's most common scenario: a recommendations document that ends up in a drawer because no one has the capacity to act on what was proposed."
+
+comoFazemos:
+  lines:
+    - "From assessing the real environment"
+    - "to hands-on execution."
+  body:
+    - "We start by mapping the environment as it is today — architecture, integrations, critical dependencies, technical debt, and security and scale risk points. It isn't a checklist audit: it's understanding why the environment got to this state and what each proposed change will affect before recommending anything."
+    - "Execution happens with continuous knowledge transfer to the internal team, not as a black box delivered at the end of the project. The goal is for the internal structure to come out more capable than it went in, not more dependent on the consulting firm."
+    - "From that mapping, we prioritize by real business impact and operational risk, not by isolated technical complexity. The resulting roadmap is discussed with the internal team — the architecture decision doesn't come out ready-made from a closed room, it's validated with whoever will live with it day to day."
+
+beneficios:
+  h2: "What changes after the consulting engagement."
+  subtitle: "Each stage of the method above addresses a specific risk that Mid Market and Enterprise companies with high technical complexity feel in practice."
+  items:
+    - "Architecture decisions grounded in a real assessment of the environment, not a generic market recommendation."
+    - "Backlog prioritized by business impact, reducing rework and the waste of isolated technical decisions."
+    - "Technology roadmap validated with the internal team, not imposed from the outside."
+    - "Knowledge transferred throughout the project, reducing dependency on the consulting firm after delivery."
+
+aboutCards:
+  - tag: "Recommended for"
+    h3: "Mid Market and Enterprise companies"
+    body: "Companies with their own IT structure, but with backlog, architecture complexity, or strategic decisions beyond the capacity or specialization currently available on the internal team."
+  - tag: "Led by Tinnova"
+    h3: "Technology applied to business"
+    body: "Tinnova combines consulting and technical capacity to connect business context, data, and execution — without delivering technology for technology's sake."
+
+proximoPasso:
+  h2: "Let's assess whether your IT structure is ready for the next step."
+  body: "Briefly tell us about your current technical scenario. Tinnova assesses the context before recommending any architecture or technology change."

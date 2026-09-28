@@ -173,8 +173,54 @@ h1,h2,h3,p{margin:0;}
 
 .nav-cta{flex-shrink:0;}
 
+/* ============ LANGUAGE SELECTOR ============ */
+.lang-switcher{position:relative;flex-shrink:0;}
+.lang-switcher-toggle{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  height:31px;
+  padding:0 10px;
+  border-radius:20px;
+  transition:background .15s ease;
+}
+.lang-switcher-toggle:hover{background:rgba(41,51,84,0.06);}
+.lang-switcher .chevron{width:9px;height:5px;color:var(--navy);transition:transform .15s ease;}
+.lang-switcher.open .chevron{transform:rotate(180deg);}
+.lang-flag{font-size:18px;line-height:1;}
+.lang-dropdown{
+  display:none;
+  position:absolute;
+  top:calc(100% + 14px);
+  right:0;
+  min-width:176px;
+  background:#eeebf0;
+  border-radius:14px;
+  padding:8px;
+  box-shadow:0 18px 40px rgba(22,20,50,0.16);
+  z-index:20;
+  list-style:none;
+  margin:0;
+}
+.lang-switcher.open .lang-dropdown{display:block;}
+.lang-dropdown a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  font-size:13px;
+  color:var(--navy);
+  padding:10px 12px;
+  border-radius:8px;
+}
+.lang-dropdown a:hover{background:rgba(111,57,150,0.08);color:var(--purple);}
+.lang-dropdown a.active{color:var(--purple);background:rgba(111,57,150,0.08);}
+
 /* Mobile nav (hidden on desktop) */
 .mobile-nav{display:none;}
+.mobile-nav .lang-switcher-toggle{height:26px;padding:0 4px;gap:4px;}
+.mobile-nav .lang-flag{font-size:16px;}
+.mobile-nav .lang-dropdown{right:auto;left:50%;transform:translateX(-50%);}
 
 /* ============ CONTACT FORM (shared by home + solution pages) ============ */
 .contato-form{

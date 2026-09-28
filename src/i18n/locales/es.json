@@ -1,0 +1,223 @@
+{
+  "site": {
+    "defaultTitle": "Tinnova — Consultoría en tecnología para desafíos de negocio",
+    "defaultDescription": "Entendemos tu contexto para desarrollar software a medida, formar squads de tecnología y evolucionar sistemas con consistencia."
+  },
+  "nav": {
+    "ariaMain": "Navegación principal",
+    "ariaHome": "Tinnova - inicio",
+    "solutions": "Soluciones",
+    "cases": "Casos",
+    "blog": "Blog",
+    "careers": "Empleos",
+    "cta": "Habla con un especialista",
+    "mobileOpen": "Abrir menú",
+    "mobileClose": "Cerrar menú",
+    "search": "Buscar"
+  },
+  "langSelector": {
+    "ariaLabel": "Seleccionar idioma",
+    "current": "Idioma actual: {lang}"
+  },
+  "hero": {
+    "eyebrow": "Tecnología aplicada al negocio",
+    "titleLines": ["Consultoría en tecnología", "para desafíos", "de negocio"],
+    "lead": "Entendemos tu contexto para desarrollar software a medida, formar squads de tecnología y evolucionar sistemas con consistencia.",
+    "ctaPrimary": "Habla con un especialista",
+    "ctaSecondary": "Conoce nuestras soluciones"
+  },
+  "pillars": {
+    "label": "Experiencia que respalda decisiones importantes."
+  },
+  "challenge": {
+    "eyebrow": "El desafío real",
+    "title": "La tecnología que no entiende el negocio se vuelve un costo.",
+    "intro": "Cuando los sistemas, la operación y la estrategia dejan de avanzar juntos, el problema no se resuelve solo con más desarrollo. Se necesita claridad para decidir, capacidad para ejecutar y estructura para evolucionar.",
+    "cards": [
+      { "title": "Modernizar sin interrumpir", "text": "Evolucionar sistemas críticos sin comprometer la continuidad de la operación." },
+      { "title": "Integrar lo que está desconectado", "text": "Conectar sistemas, datos y procesos para reducir el retrabajo y el riesgo." },
+      { "title": "Recuperar capacidad de entrega", "text": "Reforzar equipos sobrecargados con especialistas y gobernanza." },
+      { "title": "Transformar demanda en decisión", "text": "Entender contexto, prioridad e impacto antes de definir la tecnología." }
+    ]
+  },
+  "method": {
+    "eyebrow": "Nuestra forma de trabajar",
+    "title": "Antes de construir, entendemos qué necesita cambiar.",
+    "imageAlt": "Renderización 3D abstracta de una estructura de vidrio",
+    "steps": [
+      { "num": "01", "title": "Entender", "text": "Mapeamos contexto, operación, objetivos y restricciones." },
+      { "num": "02", "title": "Definir", "text": "Priorizamos el camino, el alcance y la estructura adecuada." },
+      { "num": "03", "title": "Construir", "text": "Ejecutamos con técnica, gobernanza y visibilidad." },
+      { "num": "04", "title": "Evolucionar", "text": "Medimos resultados y adaptamos la solución a nuevos desafíos." }
+    ],
+    "cta": "Habla con un especialista"
+  },
+  "cases": {
+    "eyebrow": "Casos",
+    "title": "Los desafíos complejos exigen pruebas, no promesas.",
+    "intro": "Espacios reservados para proyectos aprobados, con contexto de negocio, capacidad aplicada y resultados validados.",
+    "items": [
+      {
+        "logoAlt": "Embraer",
+        "eyebrow": "Embraer",
+        "title": "Dashboard de recolección de datos",
+        "text": "Sistema de gestión y plataforma de BI para monitorear el desempeño de aeronaves y sus componentes, permitiendo análisis detallados, comparaciones, benchmarks y alertas, contribuyendo a un mejor rendimiento y mantenimiento."
+      },
+      {
+        "logoAlt": "Serasa Experian",
+        "eyebrow": "Serasa Experian",
+        "title": "AgroBusiness",
+        "text": "Atendiendo al mercado Agro, asignamos un Squad especializado para desarrollar soluciones personalizadas. Nuestro foco es aportar innovación y eficiencia, atendiendo las necesidades específicas de este segmento en constante crecimiento y evolución."
+      },
+      {
+        "logoAlt": "PagSeguro - Grupo UOL",
+        "eyebrow": "PagSeguro - Grupo UOL",
+        "title": "soluciones integradas y seguras",
+        "text": "Nuestros proyectos abarcan varios frentes: seguridad bancaria, análisis de fraude, automatización jurídica, análisis de comportamiento y riesgo, y Data Analysis. Nuestro objetivo es ofrecer soluciones integradas y seguras para diversas necesidades."
+      }
+    ]
+  },
+  "capacity": {
+    "eyebrow": "Capacidad técnica",
+    "title": "Estructura para sostener la evolución más allá de entregas puntuales.",
+    "text": "Reunimos competencias para gestionar entornos críticos y necesidades que cambian con el tiempo.",
+    "items": [
+      "Ingeniería de software",
+      "Arquitectura e integraciones",
+      "Datos, IA y automatización",
+      "Gobernanza y sostenimiento",
+      "Producto y experiencia digital"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Hablemos",
+    "title": "Tu desafío tecnológico comienza con una buena lectura del contexto.",
+    "text": "Cuéntanos qué necesitas evolucionar. Nuestro equipo se pondrá en contacto para entender el escenario y evaluar el camino más adecuado."
+  },
+  "form": {
+    "nomeLabel": "Nombre",
+    "nomePlaceholder": "Nombre completo",
+    "cargoLabel": "Cargo",
+    "cargoPlaceholder": "Tu cargo actual",
+    "empresaLabel": "Empresa",
+    "empresaPlaceholder": "Empresa actual",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Tu correo principal",
+    "telefoneLabel": "Teléfono",
+    "telefonePlaceholder": "+52 (55) 1234-5678",
+    "mensagemLabel": "¿Cómo podemos ayudarte?",
+    "mensagemPlaceholder": "Cuéntanos sobre tu desafío",
+    "submit": "Habla con un especialista",
+    "submitSending": "Enviando...",
+    "disclaimer": "Tus datos se utilizarán únicamente para responder al contacto.",
+    "successMsg": "¡Mensaje enviado! Redirigiendo a WhatsApp...",
+    "errorMsg": "No pudimos enviarlo en este momento. Intenta de nuevo o escríbenos por WhatsApp."
+  },
+  "reportForm": {
+    "identificacaoLabel": "¿Deseas identificarte?",
+    "identificacaoYes": "Sí",
+    "identificacaoNo": "No, prefiero permanecer anónimo(a)",
+    "nomeLabel": "Nombre",
+    "nomePlaceholder": "Tu nombre",
+    "telefoneLabel": "Número de contacto",
+    "telefonePlaceholder": "+52 (55) 1234-5678",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Tu correo electrónico",
+    "descricaoLabel": "Detalla aquí tu denuncia",
+    "descricaoPlaceholder": "Describe la situación con el mayor detalle posible",
+    "anexoLabel": "Adjuntar evidencias",
+    "submit": "Enviar denuncia",
+    "submitSending": "Enviando...",
+    "disclaimer": "Tu denuncia es confidencial y estás protegido(a) contra represalias.",
+    "successMsg": "Denuncia enviada con éxito. Gracias por contribuir a la integridad de Tinnova.",
+    "errorMsg": "No pudimos enviarla en este momento. Intenta de nuevo más tarde."
+  },
+  "footer": {
+    "tagline": "Tecnología aplicada al negocio, con consultoría y capacidad técnica.",
+    "attendance": "Atención Tinnova:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Teléfono:",
+    "phoneSuffix": "(WhatsApp)",
+    "ctaWhatsapp": "Contáctanos",
+    "colInstitutional": "Institucional",
+    "colSolutions": "Soluciones",
+    "colContact": "Contacto",
+    "colLegal": "Legal",
+    "linkContact": "Contáctanos",
+    "linkPrivacy": "Política de Privacidad",
+    "linkReport": "Central de Denuncias",
+    "copyright": "Copyright © 2026 - Todos los derechos reservados"
+  },
+  "solutionsPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbServices": "Servicios",
+    "ctaPrimary": "Habla con un especialista",
+    "challengeLabel": "El desafío",
+    "cenarioEyebrow": "Escenario",
+    "solucaoEyebrow": "La solución",
+    "comoFazemosEyebrow": "Cómo lo hacemos",
+    "beneficiosEyebrow": "Los beneficios",
+    "proximoPassoEyebrow": "Próximo paso"
+  },
+  "privacy": {
+    "seoTitle": "Política de Privacidad | Tinnova",
+    "seoDescription": "Política de Privacidad y Protección de Datos de Tinnova, en conformidad con la LGPD.",
+    "breadcrumb": "Política de Privacidad",
+    "eyebrowLegal": "Legal",
+    "title": "Política de Privacidad y Protección de Datos",
+    "lead": "En Tinnova respetamos la privacidad y valoramos la confianza depositada por nuestros clientes. Esta política describe cómo se recopila, utiliza, almacena y protege la información personal, en conformidad con la Ley General de Protección de Datos de Brasil (LGPD).",
+    "topics": [
+      { "title": "Recopilación de Datos", "body": "Recopilamos solo la información necesaria para prestar nuestros servicios de manera eficaz. Se incluyen nombre, correo electrónico, teléfono y datos de pago recopilados durante el registro, la compra o la suscripción a boletines." },
+      { "title": "Uso de Datos", "body": "La información se utiliza para ofrecer y mejorar servicios, procesar transacciones, responder consultas, enviar comunicaciones relevantes y realizar análisis administrativos." },
+      { "title": "Protección de Datos", "body": "Implementamos medidas de seguridad adecuadas para proteger tu información personal contra el acceso, alteración, divulgación o destrucción no autorizados." },
+      { "title": "Derechos del Titular de los Datos", "body": "Conforme a la LGPD, los titulares tienen derechos de acceso, corrección, portabilidad, eliminación y limitación del tratamiento de sus datos personales. Para ejercer estos derechos, contáctanos en {email}." },
+      { "title": "Cambios en esta Política", "body": "Las actualizaciones periódicas se comunicarán a través del sitio web o por correo electrónico." }
+    ],
+    "dpoEyebrow": "Encargado de Protección de Datos",
+    "dpoTitle": "Departamento de Compliance",
+    "dpoText": "Sus funciones incluyen recibir reclamaciones, brindar aclaraciones y orientar a los empleados sobre las prácticas de protección de datos personales. Contacto: {email}.",
+    "giftsTitle": "Recepción de Regalos y Obsequios",
+    "giftsObjectiveLabel": "Objetivo:",
+    "giftsObjectiveText": "Mantener la integridad e imparcialidad en las relaciones comerciales, evitando conflictos de interés.",
+    "giftsDefinitionLabel": "Definición:",
+    "giftsDefinitionText": "Los regalos u obsequios son artículos, servicios o beneficios ofrecidos sin expectativa de un pago equivalente, incluyendo productos promocionales, hospitalidad, descuentos y favores especiales.",
+    "giftsLimitLabel": "Límite de Valor:",
+    "giftsLimitText": "Los empleados pueden aceptar regalos cuyo valor no exceda los 100 dólares estadounidenses (o su equivalente en moneda local) por artículo individual.",
+    "giftsTransparencyLabel": "Transparencia:",
+    "giftsTransparencyText": "Los regalos deben reportarse al supervisor o al departamento de ética para evaluar su adecuación.",
+    "giftsExceptionsLabel": "Excepciones:",
+    "giftsExceptionsText": "Los artículos de valor simbólico (bolígrafos, libretas con logotipos) pueden aceptarse sin notificación cuando sean claramente insignificantes.",
+    "giftsConsequencesLabel": "Consecuencias por Infracciones:",
+    "giftsConsequencesText": "Las infracciones pueden resultar en medidas disciplinarias que van desde una advertencia hasta el despido, según la gravedad.",
+    "giftsUpdated": "Fecha de la última actualización: agosto de 2026",
+    "codeEyebrow": "Código de Conducta y Ética",
+    "codeTitle": "Consulta nuestro Código de Conducta y Ética",
+    "codeText": "Descarga el documento completo con las directrices de conducta y ética adoptadas por Tinnova.",
+    "codeCta": "Descargar Código de Conducta y Ética"
+  },
+  "report": {
+    "seoTitle": "Central de Denuncias | Tinnova",
+    "seoDescription": "Canal de denuncias del Programa de Integridad Corporativa de Tinnova.",
+    "breadcrumb": "Central de Denuncias",
+    "eyebrowLegal": "Legal",
+    "title": "Central de Denuncias",
+    "lead": "Tinnova presenta su compromiso con los más altos estándares de ética y cumplimiento. El Programa de Integridad Corporativa es central para la estrategia de gobernanza de la organización.",
+    "objectivesEyebrow": "Objetivos del Programa",
+    "objectives": [
+      { "title": "Detección y Prevención", "body": "Identificar riesgos y vulnerabilidades que puedan derivar en comportamientos poco éticos o ilegales." },
+      { "title": "Corrección de Irregularidades", "body": "Actuar con prontitud mediante procesos de investigación transparentes y justos." },
+      { "title": "Educación y Concienciación", "body": "Promover una cultura de integridad mediante capacitaciones continuas y comunicación de políticas." },
+      { "title": "Compromiso con la Legalidad", "body": "Asegurar el pleno cumplimiento de las leyes y regulaciones aplicables." }
+    ],
+    "channelEyebrow": "Canal de Denuncias",
+    "channelText": "Tinnova ofrece un formulario de denuncia confidencial, accesible a empleados y socios, garantizando el anonimato y la protección contra represalias.",
+    "formEyebrow": "Formulario de Denuncia",
+    "formTitle": "Registra tu denuncia"
+  },
+  "notFound": {
+    "pageTitle": "Página no encontrada | Tinnova",
+    "eyebrow": "Página no encontrada",
+    "text": "Serás redirigido a la página principal en unos instantes. Si esto no ocurre, {link}.",
+    "linkText": "haz clic aquí"
+  }
+}

@@ -36,8 +36,42 @@ import '../styles/base.css';
   <p class="eyebrow">Página não encontrada</p>
   <p>Você será redirecionado para a home em instantes. Se isso não acontecer, <a href="/" style="color:var(--purple);font-weight:700;">clique aqui</a>.</p>
 </div>
-<script>
-  window.location.replace('/');
+<script is:inline>
+(function () {
+  var STORAGE_KEY = 'tinnova:lang';
+  var SUPPORTED = ['pt-BR', 'en', 'es'];
+  var DEFAULT_LOCALE = 'pt-BR';
+
+  function detectBrowserLocale() {
+    var candidates = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || navigator.userLanguage || DEFAULT_LOCALE];
+    for (var i = 0; i < candidates.length; i++) {
+      var l = (candidates[i] || '').toLowerCase();
+      if (l.indexOf('pt') === 0) return 'pt-BR';
+      if (l.indexOf('en') === 0) return 'en';
+      if (l.indexOf('es') === 0) return 'es';
+    }
+    return DEFAULT_LOCALE;
+  }
+
+  function localeFromPath(pathname) {
+    var segment = pathname.split('/').filter(Boolean)[0];
+    return SUPPORTED.indexOf(segment) > -1 ? segment : null;
+  }
+
+  var locale = localeFromPath(window.location.pathname);
+  if (!locale) {
+    try {
+      locale = window.localStorage.getItem(STORAGE_KEY);
+    } catch (e) {}
+  }
+  if (!locale || SUPPORTED.indexOf(locale) === -1) {
+    locale = detectBrowserLocale();
+  }
+
+  window.location.replace(locale === DEFAULT_LOCALE ? '/' : '/' + locale + '/');
+})();
 </script>
 </body>
 </html>

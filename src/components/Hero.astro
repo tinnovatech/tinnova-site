@@ -1,12 +1,20 @@
+---
+import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
+const titleLines = t<string[]>('hero.titleLines');
+---
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-copy">
-    <p class="eyebrow">Tecnologia aplicada ao negócio</p>
-    <h1>Consultoria em<br>tecnologia para<br>desafios de negócio</h1>
-    <p class="lead">Entendemos seu contexto para desenvolver software sob medida, formar squads de tecnologia e evoluir sistemas com consistência.</p>
+    <p class="eyebrow">{t('hero.eyebrow')}</p>
+    <h1>{titleLines.map((line, i) => <>{line}{i < titleLines.length - 1 && <br />}</>)}</h1>
+    <p class="lead">{t('hero.lead')}</p>
     <div class="hero-cta-row">
-      <a href="#contato" class="btn-primary">Fale com um especialista <span aria-hidden="true">↗</span></a>
-      <a href="#desafio-real" class="text-link">Conheça nossas soluções <span aria-hidden="true">↓</span></a>
+      <a href="#contato" class="btn-primary">{t('hero.ctaPrimary')} <span aria-hidden="true">↗</span></a>
+      <a href="#desafio-real" class="text-link">{t('hero.ctaSecondary')} <span aria-hidden="true">↓</span></a>
     </div>
   </div>
 </section>

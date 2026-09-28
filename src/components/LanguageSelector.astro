@@ -1,0 +1,59 @@
+---
+import { DEFAULT_LOCALE, LOCALE_META, type Locale } from '../i18n/config';
+import { getLocalizedLinks, useTranslations } from '../i18n/utils';
+
+interface Props {
+  /** Extra class(es) appended to the wrapper, so desktop/mobile placements can be styled independently. */
+  class?: string;
+}
+const { class: extraClass = '' } = Astro.props;
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
+const links = getLocalizedLinks(Astro.url.pathname);
+const currentMeta = LOCALE_META[currentLocale];
+---
+<div class={`lang-switcher ${extraClass}`.trim()} data-dropdown>
+  <button
+    type="button"
+    class="lang-switcher-toggle"
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    aria-label={t('langSelector.ariaLabel')}
+  >
+    <span class="lang-flag" aria-hidden="true">{currentMeta.flag}</span>
+    <svg class="chevron" viewBox="0 0 9 5" fill="none" aria-hidden="true">
+      <path d="M1 1L4.5 4L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+    </svg>
+  </button>
+  <ul class="lang-dropdown" role="listbox" aria-label={t('langSelector.ariaLabel')}>
+    {links.map((link) => (
+      <li role="presentation">
+        <a
+          href={link.href}
+          role="option"
+          aria-selected={link.locale === currentLocale ? 'true' : 'false'}
+          aria-current={link.locale === currentLocale ? 'true' : undefined}
+          class={link.locale === currentLocale ? 'active' : ''}
+          data-lang-link={link.locale}
+        >
+          <span class="lang-flag" aria-hidden="true">{link.meta.flag}</span>
+          <span>{link.meta.label}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script is:inline>
+(function () {
+  var STORAGE_KEY = 'tinnova:lang';
+  document.querySelectorAll('[data-lang-link]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try {
+        window.localStorage.setItem(STORAGE_KEY, a.getAttribute('data-lang-link'));
+      } catch (e) {}
+    });
+  });
+})();
+</script>

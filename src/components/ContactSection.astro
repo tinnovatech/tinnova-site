@@ -1,8 +1,13 @@
 ---
 import ContactForm from './ContactForm.astro';
+import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
 ---
 <section class="contato" id="contato">
-  <div class="contato-copy"><p class="eyebrow">Vamos conversar</p><h2>Seu desafio tecnológico começa com uma boa leitura do contexto.</h2><p>Conte o que precisa evoluir. Nossa equipe entra em contato para entender o cenário e avaliar o caminho mais adequado.</p></div>
+  <div class="contato-copy"><p class="eyebrow">{t('contact.eyebrow')}</p><h2>{t('contact.title')}</h2><p>{t('contact.text')}</p></div>
   <div class="contato-form-wrap">
     <ContactForm subject="Novo contato pelo site Tinnova Home" fromName="Site Tinnova Home" pageCode="home" />
   </div>

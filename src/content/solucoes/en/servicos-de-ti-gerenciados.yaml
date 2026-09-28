@@ -1,0 +1,62 @@
+name: "Managed IT Services"
+contactLabel: "Managed IT Services"
+title: "Managed IT Services for Companies | Tinnova"
+description: "Managed IT services for companies operating in the cloud: monitoring, security, and cost optimization, without building an internal DevOps team."
+
+hero:
+  h1: "Cloud infrastructure operations for those without a dedicated DevOps team."
+  lead: "Continuous monitoring, security, and cost optimization of your AWS infrastructure, run by people who watch the environment every day, not only when something breaks."
+  secondaryLinkText: "See what we do"
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-hero.webp"
+    alt: "Data panel and operational indicators"
+
+challengeText: "Keeping a cloud infrastructure aligned with cost, security, and performance best practices requires constant attention. Most development teams don't have the time or scope for it, and the usual result is AWS costs running above expectations or a security gap discovered too late."
+
+cenario:
+  h2: "When the development team also has to take care of the infrastructure."
+  body:
+    - "Companies that migrated to the cloud gain scale, but inherit a new responsibility: keeping that infrastructure optimized and secure day to day. Without a dedicated team for that, the task falls on the development team, split between building the product and taking care of servers."
+    - "The most common outcome is cloud cost that grows out of control, because no one has time to review resource usage, and a security vulnerability that only shows up once it has already become an incident."
+  image:
+    src: "/images/solucoes/servicos-de-ti-gerenciados-cenario.webp"
+    alt: "Abstract data visualization representing applied analysis and intelligence"
+
+solucao:
+  lines:
+    - "Continuous infrastructure management,"
+    - "not just a ticket when something breaks."
+  body:
+    - "Tinnova takes on cloud infrastructure operations as an extension of your team: deployment, monitoring, security, and AWS cost optimization, with continuous follow-through instead of one-off support."
+    - "This frees up your internal development team to focus on the product, without giving up having someone responsible for the health of the infrastructure every day."
+    - "The problem is rarely the cloud itself. It's not having anyone watching it consistently."
+
+comoFazemos:
+  lines:
+    - "From assessing the environment"
+    - "to continuous monitoring."
+  body:
+    - "We start by assessing the current cloud environment: resource usage, security configuration, CI/CD practices, and points of cost waste."
+    - "From there, we implement the priority fixes and align the environment with cloud infrastructure best practices, including virtualization, backup, and adherence to infrastructure-as-code principles."
+    - "Follow-through continues after the initial adjustment, with performance monitoring and periodic improvement recommendations, not just a one-time delivery."
+
+beneficios:
+  h2: "What changes with managed operations."
+  subtitle: "Each stage of the method above addresses a specific risk that companies with cloud infrastructure feel in practice."
+  items:
+    - "More predictable infrastructure cost, with continuous optimization of AWS usage."
+    - "Constant security and monitoring, without relying on a reactive support ticket."
+    - "Internal development team free to focus on the product, not on server operations."
+    - "Environment ready to scale without having to build an in-house DevOps team."
+
+aboutCards:
+  - tag: "Recommended for"
+    h3: "Companies with cloud infrastructure (AWS) already in operation"
+    body: "Companies with cloud infrastructure (AWS) already in operation, without an internal team dedicated to monitoring, security, and cost optimization."
+  - tag: "Led by Tinnova"
+    h3: "Technology applied to business"
+    body: "Tinnova combines consulting and technical capacity to connect business context, data, and execution, without delivering technology for technology's sake."
+
+proximoPasso:
+  h2: "Let's assess whether your cloud infrastructure is truly optimized."
+  body: "Briefly tell us about your current environment (cloud provider used, size of the operation, main pain point). Tinnova assesses the scenario before recommending any change."

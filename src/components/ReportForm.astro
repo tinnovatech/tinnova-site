@@ -1,5 +1,10 @@
 ---
 import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
+import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
 ---
 <form class="contato-form" id="reportForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="access_key" value={WEB3FORMS_DENUNCIA_ACCESS_KEY}>
@@ -9,41 +14,41 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
 
   <div class="form-grid">
     <div class="form-field full">
-      <label for="identificacao">Deseja se identificar?</label>
+      <label for="identificacao">{t('reportForm.identificacaoLabel')}</label>
       <select id="identificacao" name="identificacao" required>
-        <option value="Sim">Sim</option>
-        <option value="Não">Não, prefiro permanecer anônimo(a)</option>
+        <option value="Sim">{t('reportForm.identificacaoYes')}</option>
+        <option value="Não">{t('reportForm.identificacaoNo')}</option>
       </select>
     </div>
     <div class="form-field">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      <label for="nome">{t('reportForm.nomeLabel')}</label>
+      <input type="text" id="nome" name="nome" placeholder={t('reportForm.nomePlaceholder')}>
     </div>
     <div class="form-field">
-      <label for="telefone">Número para contato</label>
-      <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 56789">
+      <label for="telefone">{t('reportForm.telefoneLabel')}</label>
+      <input type="tel" id="telefone" name="telefone" placeholder={t('reportForm.telefonePlaceholder')}>
     </div>
     <div class="form-field full">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Seu e-mail">
+      <label for="email">{t('reportForm.emailLabel')}</label>
+      <input type="email" id="email" name="email" placeholder={t('reportForm.emailPlaceholder')}>
     </div>
     <div class="form-field full">
-      <label for="descricao">Detalhe aqui sua denúncia</label>
-      <textarea id="descricao" name="descricao" placeholder="Descreva a ocorrência com o máximo de detalhes possível" required></textarea>
+      <label for="descricao">{t('reportForm.descricaoLabel')}</label>
+      <textarea id="descricao" name="descricao" placeholder={t('reportForm.descricaoPlaceholder')} required></textarea>
     </div>
     <div class="form-field full">
-      <label for="anexo">Anexo de evidências</label>
+      <label for="anexo">{t('reportForm.anexoLabel')}</label>
       <input type="file" id="anexo" name="attachment">
     </div>
   </div>
   <div class="form-footer">
-    <button type="submit" class="form-submit">Enviar denúncia <span aria-hidden="true">↗</span></button>
-    <small>Sua denúncia é confidencial e você está protegido(a) contra retaliações.</small>
+    <button type="submit" class="form-submit">{t('reportForm.submit')} <span aria-hidden="true">↗</span></button>
+    <small>{t('reportForm.disclaimer')}</small>
   </div>
   <p class="form-msg" id="reportFormMsg"></p>
 </form>
 
-<script>
+<script define:vars={{ sendingText: t('reportForm.submitSending'), successText: t('reportForm.successMsg'), errorText: t('reportForm.errorMsg') }}>
 (function(){
   var form = document.getElementById('reportForm');
   var msg = document.getElementById('reportFormMsg');
@@ -72,7 +77,7 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
     var submitBtn = form.querySelector('.form-submit');
     var originalText = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Enviando...';
+    submitBtn.innerHTML = sendingText;
     msg.className = 'form-msg';
 
     var formData = new FormData(form);
@@ -84,7 +89,7 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
     .then(function(res){ return res.json(); })
     .then(function(data){
       if(data.success){
-        msg.textContent = 'Denúncia enviada com sucesso. Obrigado por contribuir com a integridade da Tinnova.';
+        msg.textContent = successText;
         msg.className = 'form-msg show ok';
         form.reset();
       } else {
@@ -92,7 +97,7 @@ import { WEB3FORMS_DENUNCIA_ACCESS_KEY } from '../consts';
       }
     })
     .catch(function(){
-      msg.textContent = 'Não foi possível enviar agora. Tente novamente mais tarde.';
+      msg.textContent = errorText;
       msg.className = 'form-msg show err';
     })
     .finally(function(){

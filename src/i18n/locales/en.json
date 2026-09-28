@@ -1,0 +1,223 @@
+{
+  "site": {
+    "defaultTitle": "Tinnova — Technology consulting for business challenges",
+    "defaultDescription": "We understand your context to build software tailored to your needs, form technology squads, and evolve systems with consistency."
+  },
+  "nav": {
+    "ariaMain": "Main navigation",
+    "ariaHome": "Tinnova - home",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "blog": "Blog",
+    "careers": "Careers",
+    "cta": "Talk to a specialist",
+    "mobileOpen": "Open menu",
+    "mobileClose": "Close menu",
+    "search": "Search"
+  },
+  "langSelector": {
+    "ariaLabel": "Select language",
+    "current": "Current language: {lang}"
+  },
+  "hero": {
+    "eyebrow": "Technology applied to business",
+    "titleLines": ["Technology consulting", "for business", "challenges"],
+    "lead": "We understand your context to build software tailored to your needs, form technology squads, and evolve systems with consistency.",
+    "ctaPrimary": "Talk to a specialist",
+    "ctaSecondary": "See our solutions"
+  },
+  "pillars": {
+    "label": "Experience that supports important decisions."
+  },
+  "challenge": {
+    "eyebrow": "The real challenge",
+    "title": "Technology that doesn't understand the business becomes a cost.",
+    "intro": "When systems, operations, and strategy stop moving forward together, the problem isn't solved with more development alone. It takes clarity to decide, capacity to execute, and structure to evolve.",
+    "cards": [
+      { "title": "Modernize without stopping", "text": "Evolve critical systems without compromising business continuity." },
+      { "title": "Integrate what's disconnected", "text": "Connect systems, data, and processes to reduce rework and risk." },
+      { "title": "Recover delivery capacity", "text": "Reinforce overloaded teams with specialists and governance." },
+      { "title": "Turn demand into decisions", "text": "Understand context, priority, and impact before defining technology." }
+    ]
+  },
+  "method": {
+    "eyebrow": "How we work",
+    "title": "Before we build, we understand what needs to change.",
+    "imageAlt": "Abstract 3D rendering of a glass structure",
+    "steps": [
+      { "num": "01", "title": "Understand", "text": "We map context, operations, objectives, and constraints." },
+      { "num": "02", "title": "Define", "text": "We prioritize the path, scope, and the right structure." },
+      { "num": "03", "title": "Build", "text": "We execute with technique, governance, and visibility." },
+      { "num": "04", "title": "Evolve", "text": "We measure results and adapt the solution to new challenges." }
+    ],
+    "cta": "Talk to a specialist"
+  },
+  "cases": {
+    "eyebrow": "Cases",
+    "title": "Complex challenges demand proof, not promises.",
+    "intro": "Reserved spaces for approved projects, with business context, applied capacity, and validated results.",
+    "items": [
+      {
+        "logoAlt": "Embraer",
+        "eyebrow": "Embraer",
+        "title": "Data collection dashboard",
+        "text": "Management system and BI platform to monitor aircraft and component performance, enabling detailed analysis, comparisons, benchmarks, and alerts, contributing to better performance and maintenance."
+      },
+      {
+        "logoAlt": "Serasa Experian",
+        "eyebrow": "Serasa Experian",
+        "title": "AgroBusiness",
+        "text": "Serving the Agro market, we allocated a specialized Squad to develop custom solutions. Our focus is delivering innovation and efficiency, meeting the specific needs of this constantly growing and evolving segment."
+      },
+      {
+        "logoAlt": "PagSeguro - Grupo UOL",
+        "eyebrow": "PagSeguro - Grupo UOL",
+        "title": "integrated and secure solutions",
+        "text": "Our projects span multiple fronts: banking security, fraud analysis, legal automation, behavior and risk analysis, and Data Analysis. Our goal is to deliver integrated and secure solutions for a wide range of needs."
+      }
+    ]
+  },
+  "capacity": {
+    "eyebrow": "Technical capacity",
+    "title": "Structure to sustain evolution beyond one-off deliveries.",
+    "text": "We bring together the skills to handle critical environments and needs that change over time.",
+    "items": [
+      "Software engineering",
+      "Architecture and integrations",
+      "Data, AI, and automation",
+      "Governance and sustainment",
+      "Product and digital experience"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "title": "Your technology challenge starts with a good read of the context.",
+    "text": "Tell us what needs to evolve. Our team will get in touch to understand the scenario and assess the best path forward."
+  },
+  "form": {
+    "nomeLabel": "Name",
+    "nomePlaceholder": "Full name",
+    "cargoLabel": "Role",
+    "cargoPlaceholder": "Your current role",
+    "empresaLabel": "Company",
+    "empresaPlaceholder": "Current company",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your main email",
+    "telefoneLabel": "Phone",
+    "telefonePlaceholder": "+1 (555) 123-4567",
+    "mensagemLabel": "How can we help?",
+    "mensagemPlaceholder": "Tell us about your challenge",
+    "submit": "Talk to a specialist",
+    "submitSending": "Sending...",
+    "disclaimer": "Your data will only be used to respond to your request.",
+    "successMsg": "Message sent! Redirecting to WhatsApp...",
+    "errorMsg": "We couldn't send it right now. Please try again or reach us on WhatsApp."
+  },
+  "reportForm": {
+    "identificacaoLabel": "Would you like to identify yourself?",
+    "identificacaoYes": "Yes",
+    "identificacaoNo": "No, I prefer to remain anonymous",
+    "nomeLabel": "Name",
+    "nomePlaceholder": "Your name",
+    "telefoneLabel": "Contact number",
+    "telefonePlaceholder": "+1 (555) 123-4567",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your email",
+    "descricaoLabel": "Describe your report here",
+    "descricaoPlaceholder": "Describe the occurrence in as much detail as possible",
+    "anexoLabel": "Evidence attachment",
+    "submit": "Submit report",
+    "submitSending": "Sending...",
+    "disclaimer": "Your report is confidential and you are protected against retaliation.",
+    "successMsg": "Report submitted successfully. Thank you for contributing to Tinnova's integrity.",
+    "errorMsg": "We couldn't submit it right now. Please try again later."
+  },
+  "footer": {
+    "tagline": "Technology applied to business, with consulting and technical capacity.",
+    "attendance": "Tinnova support:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "phoneSuffix": "(WhatsApp)",
+    "ctaWhatsapp": "Contact Us",
+    "colInstitutional": "Company",
+    "colSolutions": "Solutions",
+    "colContact": "Contact",
+    "colLegal": "Legal",
+    "linkContact": "Contact us",
+    "linkPrivacy": "Privacy Policy",
+    "linkReport": "Whistleblower Channel",
+    "copyright": "Copyright © 2026 - All rights reserved"
+  },
+  "solutionsPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbServices": "Services",
+    "ctaPrimary": "Talk to a specialist",
+    "challengeLabel": "The challenge",
+    "cenarioEyebrow": "Scenario",
+    "solucaoEyebrow": "The solution",
+    "comoFazemosEyebrow": "How we do it",
+    "beneficiosEyebrow": "The benefits",
+    "proximoPassoEyebrow": "Next step"
+  },
+  "privacy": {
+    "seoTitle": "Privacy Policy | Tinnova",
+    "seoDescription": "Tinnova's Privacy and Data Protection Policy, in compliance with Brazil's LGPD.",
+    "breadcrumb": "Privacy Policy",
+    "eyebrowLegal": "Legal",
+    "title": "Privacy and Data Protection Policy",
+    "lead": "At Tinnova, we respect the privacy and value the trust placed in us by our clients. This policy describes how personal information is collected, used, stored, and protected in compliance with Brazil's General Data Protection Law (LGPD).",
+    "topics": [
+      { "title": "Data Collection", "body": "We collect only the information necessary to provide our services effectively. This includes name, email address, phone number, and payment data collected during registration, purchase, or newsletter sign-up." },
+      { "title": "Data Use", "body": "Information is used to provide and improve services, process transactions, respond to inquiries, send relevant communications, and carry out administrative analysis." },
+      { "title": "Data Protection", "body": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction." },
+      { "title": "Data Subject Rights", "body": "Under the LGPD, data subjects have the right to access, correct, port, delete, and limit the processing of their personal data. To exercise these rights, contact us at {email}." },
+      { "title": "Changes to This Policy", "body": "Periodic updates will be communicated via the website or email." }
+    ],
+    "dpoEyebrow": "Data Protection Officer",
+    "dpoTitle": "Compliance Department",
+    "dpoText": "Their responsibilities include accepting complaints, providing clarification, and guiding employees on personal data protection practices. Contact: {email}.",
+    "giftsTitle": "Receiving Gifts and Giveaways",
+    "giftsObjectiveLabel": "Objective:",
+    "giftsObjectiveText": "Maintain integrity and impartiality in business relationships, avoiding conflicts of interest.",
+    "giftsDefinitionLabel": "Definition:",
+    "giftsDefinitionText": "Gifts or giveaways are items, services, or benefits offered with no expectation of equivalent payment, including promotional products, hospitality, discounts, and special favors.",
+    "giftsLimitLabel": "Value Limit:",
+    "giftsLimitText": "Employees may accept gifts whose value does not exceed 100 US dollars (or the local currency equivalent) per individual item.",
+    "giftsTransparencyLabel": "Transparency:",
+    "giftsTransparencyText": "Gifts must be reported to a supervisor or the ethics department for appropriateness review.",
+    "giftsExceptionsLabel": "Exceptions:",
+    "giftsExceptionsText": "Items of symbolic value (pens, notepads with logos) may be accepted without notification when clearly insignificant.",
+    "giftsConsequencesLabel": "Consequences for Violations:",
+    "giftsConsequencesText": "Violations may result in disciplinary action ranging from a warning to dismissal, depending on severity.",
+    "giftsUpdated": "Last updated: August 2026",
+    "codeEyebrow": "Code of Conduct and Ethics",
+    "codeTitle": "See our Code of Conduct and Ethics",
+    "codeText": "Download the full document with the conduct and ethics guidelines adopted by Tinnova.",
+    "codeCta": "Download Code of Conduct and Ethics"
+  },
+  "report": {
+    "seoTitle": "Whistleblower Channel | Tinnova",
+    "seoDescription": "Reporting channel for Tinnova's Corporate Integrity Program.",
+    "breadcrumb": "Whistleblower Channel",
+    "eyebrowLegal": "Legal",
+    "title": "Whistleblower Channel",
+    "lead": "Tinnova presents its commitment to the highest standards of ethics and compliance. The Corporate Integrity Program is central to the organization's governance strategy.",
+    "objectivesEyebrow": "Program Objectives",
+    "objectives": [
+      { "title": "Detection and Prevention", "body": "Identify risks and vulnerabilities that could lead to unethical or illegal behavior." },
+      { "title": "Correcting Irregularities", "body": "Act promptly through transparent and fair investigation processes." },
+      { "title": "Education and Awareness", "body": "Promote a culture of integrity through ongoing training and policy communication." },
+      { "title": "Commitment to Legality", "body": "Ensure full adherence to applicable laws and regulations." }
+    ],
+    "channelEyebrow": "Reporting Channel",
+    "channelText": "Tinnova provides a confidential reporting form, accessible to employees and partners, ensuring anonymity and protection against retaliation.",
+    "formEyebrow": "Report Form",
+    "formTitle": "File your report"
+  },
+  "notFound": {
+    "pageTitle": "Page not found | Tinnova",
+    "eyebrow": "Page not found",
+    "text": "You will be redirected to the homepage shortly. If that doesn't happen, {link}.",
+    "linkText": "click here"
+  }
+}

@@ -1,0 +1,60 @@
+name: "Outsourcing"
+contactLabel: "Outsourcing"
+title: "Outsourcing — Tinnova"
+description: "Amplía tu equipo de desarrollo con profesionales validados en proyectos de gran escala, sin el costo ni el tiempo de reclutar, contratar y estructurar un equipo interno."
+
+hero:
+  h1: "Capacidad técnica lista, sin armar un equipo desde cero."
+  lead: "Amplía tu equipo de desarrollo con profesionales validados en proyectos de gran escala, sin el costo ni el tiempo de reclutar, contratar y estructurar un equipo interno."
+  secondaryLinkText: "Conoce el proceso"
+  image:
+    src: "/images/solucoes/outsourcing-hero.webp"
+    alt: "Equipo reunido planificando un proyecto de desarrollo"
+
+challengeText: "Armar un equipo interno de tecnología desde cero exige reclutamiento especializado, estructuración de procesos y tiempo, recursos que la mayoría de las empresas no tiene de sobra cuando la demanda ya está tocando la puerta."
+
+cenario:
+  h2: "Cuando la demanda de desarrollo llega más rápido que la capacidad de contratar."
+  body:
+    - "Contratar un equipo interno de tecnología desde cero es un proyecto en sí mismo: exige selección técnica rigurosa, estructuración del proceso de trabajo y tiempo hasta que el equipo sea realmente productivo."
+    - "Mientras tanto, el backlog de desarrollo sigue creciendo, y la alternativa de sobrecargar al equipo actual o postergar entregas tiene un costo real para el negocio."
+  image:
+    src: "/images/solucoes/outsourcing-cenario.webp"
+    alt: "Detalle de manos en ejecución técnica en el día a día de un proyecto"
+
+solucao:
+  lines:
+    - "Un squad técnico validado,"
+    - "integrado a tu proceso."
+  body:
+    - "Tinnova pone a disposición profesionales de desarrollo ya validados en proyectos para empresas de gran porte, funcionando como extensión de tu equipo, con menor costo y tiempo de adaptación que una contratación propia."
+
+comoFazemos:
+  lines:
+    - "Del primer contacto"
+    - "a la entrega en sprints."
+  body:
+    - "Entendemos el alcance y el perfil técnico necesario en el primer contacto, con una estimación preliminar en hasta 24 horas."
+    - "En la fase de descubrimiento, mapeamos requisitos, arquitectura e integraciones necesarias, armando el squad con el perfil técnico adecuado para el proyecto."
+    - "El desarrollo corre en sprints de dos semanas, con control de calidad continuo y acompañamiento hasta la implementación y el soporte posterior al lanzamiento."
+
+beneficios:
+  h2: "Lo que cambia con un squad listo."
+  subtitle: "Cada etapa del proceso anterior resuelve un riesgo específico de quien necesita ampliar capacidad técnica rápido."
+  items:
+    - "Foco en el core business, sin gastar tiempo interno reclutando y estructurando un equipo técnico."
+    - "Reducción de costo frente a la contratación propia, con calidad técnica validada en proyectos de gran porte."
+    - "Capacidad de escalar el equipo rápidamente, sin el tiempo de adaptación de una contratación directa."
+    - "Squad multidisciplinario (frontend, backend, QA, DevOps) según la necesidad del proyecto."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas que necesitan ampliar capacidad técnica rápidamente"
+    body: "Empresas que necesitan ampliar capacidad técnica rápidamente, sin los costos ni el tiempo de una contratación propia completa."
+  - tag: "Conducido por Tinnova"
+    h3: "Tecnología aplicada al negocio"
+    body: "Tinnova combina consultoría y capacidad técnica para conectar contexto de negocio, datos y ejecución, sin entregar tecnología por la tecnología misma."
+
+proximoPasso:
+  h2: "Evaluemos si un squad técnico tiene sentido para tu momento."
+  body: "Cuéntanos brevemente la demanda actual de tu equipo. Tinnova evalúa el alcance antes de armar el squad ideal para el proyecto."

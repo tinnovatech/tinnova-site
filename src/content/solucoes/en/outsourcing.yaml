@@ -1,0 +1,60 @@
+name: "Outsourcing"
+contactLabel: "Outsourcing"
+title: "Outsourcing — Tinnova"
+description: "Expand your development team with professionals validated on large-scale projects, without the cost and time of recruiting, hiring, and structuring an internal team."
+
+hero:
+  h1: "Technical capacity ready to go, without building a team from scratch."
+  lead: "Expand your development team with professionals validated on large-scale projects, without the cost and time of recruiting, hiring, and structuring an internal team."
+  secondaryLinkText: "See the process"
+  image:
+    src: "/images/solucoes/outsourcing-hero.webp"
+    alt: "Team gathered planning a development project"
+
+challengeText: "Building an internal technology team from scratch requires specialized recruiting, process structuring, and time — resources most companies don't have to spare when demand is already at the door."
+
+cenario:
+  h2: "When development demand arrives faster than the capacity to hire."
+  body:
+    - "Hiring an internal technology team from scratch is a project in itself: it requires rigorous technical selection, structuring a work process, and time until the team is truly productive."
+    - "Meanwhile, the development backlog keeps growing, and the alternative of overloading the current team or postponing deliveries has a real cost for the business."
+  image:
+    src: "/images/solucoes/outsourcing-cenario.webp"
+    alt: "Close-up of hands at work in a project's day-to-day execution"
+
+solucao:
+  lines:
+    - "A validated technical squad,"
+    - "integrated into your process."
+  body:
+    - "Tinnova provides development professionals already validated on projects for large companies, acting as an extension of your team, with lower cost and adaptation time than hiring in-house."
+
+comoFazemos:
+  lines:
+    - "From first contact"
+    - "to delivery in sprints."
+  body:
+    - "We understand the scope and the technical profile needed on first contact, with a preliminary estimate within 24 hours."
+    - "In the discovery phase, we map requirements, architecture, and required integrations, putting together the squad with the right technical profile for the project."
+    - "Development runs in two-week sprints, with continuous quality control and follow-through until deployment and post-launch support."
+
+beneficios:
+  h2: "What changes with a ready-made squad."
+  subtitle: "Each stage of the process above addresses a specific risk for those who need to expand technical capacity fast."
+  items:
+    - "Focus on your core business, without spending internal time recruiting and structuring a technical team."
+    - "Lower cost compared to hiring in-house, with technical quality validated on large-scale projects."
+    - "Ability to scale the team quickly, without the adaptation time of a direct hire."
+    - "Multidisciplinary squad (frontend, backend, QA, DevOps) according to the project's needs."
+
+aboutCards:
+  - tag: "Recommended for"
+    h3: "Companies that need to expand technical capacity quickly"
+    body: "Companies that need to expand technical capacity quickly, without the cost and time of a full in-house hiring process."
+  - tag: "Led by Tinnova"
+    h3: "Technology applied to business"
+    body: "Tinnova combines consulting and technical capacity to connect business context, data, and execution, without delivering technology for technology's sake."
+
+proximoPasso:
+  h2: "Let's assess whether a technical squad makes sense for your moment."
+  body: "Briefly tell us about your team's current demand. Tinnova assesses the scope before putting together the ideal squad for the project."

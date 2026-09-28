@@ -1,5 +1,7 @@
 ---
 import { SITE_NAME, SOCIAL_LINKS, CONTACT_EMAIL, WHATSAPP_NUMBER, COMPANY } from '../consts';
+import { DEFAULT_LOCALE, LOCALE_META, type Locale } from '../i18n/config';
+import { getLocalizedLinks } from '../i18n/utils';
 
 interface Props {
   title: string;
@@ -9,8 +11,10 @@ interface Props {
 
 const { title, description, image = '/images/hero-banner.webp' } = Astro.props;
 
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imageURL = new URL(image, Astro.site);
+const alternateLinks = getLocalizedLinks(Astro.url.pathname);
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -33,6 +37,10 @@ const organizationSchema = {
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+{alternateLinks.map((link) => (
+  <link rel="alternate" hreflang={link.meta.hreflang} href={new URL(link.href, Astro.site)} />
+))}
+<link rel="alternate" hreflang="x-default" href={new URL(alternateLinks.find((l) => l.locale === DEFAULT_LOCALE)!.href, Astro.site)} />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content={SITE_NAME} />
@@ -40,7 +48,7 @@ const organizationSchema = {
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:image" content={imageURL} />
-<meta property="og:locale" content="pt_BR" />
+<meta property="og:locale" content={LOCALE_META[currentLocale].ogLocale} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />

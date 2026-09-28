@@ -1,5 +1,7 @@
 ---
 import { WEB3FORMS_ACCESS_KEY, WHATSAPP_CHAT_URL } from '../consts';
+import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
 
 interface Props {
   subject: string;
@@ -7,6 +9,9 @@ interface Props {
   pageCode: string;
 }
 const { subject, fromName, pageCode } = Astro.props;
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
 ---
 <form class="contato-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY}>
@@ -17,38 +22,38 @@ const { subject, fromName, pageCode } = Astro.props;
 
   <div class="form-grid">
     <div class="form-field">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+      <label for="nome">{t('form.nomeLabel')}</label>
+      <input type="text" id="nome" name="nome" placeholder={t('form.nomePlaceholder')} required>
     </div>
     <div class="form-field">
-      <label for="cargo">Cargo</label>
-      <input type="text" id="cargo" name="cargo" placeholder="Seu cargo atual">
+      <label for="cargo">{t('form.cargoLabel')}</label>
+      <input type="text" id="cargo" name="cargo" placeholder={t('form.cargoPlaceholder')}>
     </div>
     <div class="form-field">
-      <label for="empresa">Empresa</label>
-      <input type="text" id="empresa" name="empresa" placeholder="Empresa atual">
+      <label for="empresa">{t('form.empresaLabel')}</label>
+      <input type="text" id="empresa" name="empresa" placeholder={t('form.empresaPlaceholder')}>
     </div>
     <div class="form-field">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Seu principal e-mail" required>
+      <label for="email">{t('form.emailLabel')}</label>
+      <input type="email" id="email" name="email" placeholder={t('form.emailPlaceholder')} required>
     </div>
     <div class="form-field">
-      <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 56789" required>
+      <label for="telefone">{t('form.telefoneLabel')}</label>
+      <input type="tel" id="telefone" name="telefone" placeholder={t('form.telefonePlaceholder')} required>
     </div>
     <div class="form-field full">
-      <label for="mensagem">Como podemos ajudar?</label>
-      <textarea id="mensagem" name="mensagem" placeholder="Fale sobre seu desafio" required></textarea>
+      <label for="mensagem">{t('form.mensagemLabel')}</label>
+      <textarea id="mensagem" name="mensagem" placeholder={t('form.mensagemPlaceholder')} required></textarea>
     </div>
   </div>
   <div class="form-footer">
-    <button type="submit" class="form-submit">Fale com um especialista <span aria-hidden="true">↗</span></button>
-    <small>Seus dados serão usados apenas para responder ao contato.</small>
+    <button type="submit" class="form-submit">{t('form.submit')} <span aria-hidden="true">↗</span></button>
+    <small>{t('form.disclaimer')}</small>
   </div>
   <p class="form-msg" id="formMsg"></p>
 </form>
 
-<script define:vars={{ whatsappUrl: WHATSAPP_CHAT_URL }}>
+<script define:vars={{ whatsappUrl: WHATSAPP_CHAT_URL, sendingText: t('form.submitSending'), successText: t('form.successMsg'), errorText: t('form.errorMsg') }}>
 (function(){
   var form = document.getElementById('contactForm');
   var msg = document.getElementById('formMsg');
@@ -63,7 +68,7 @@ const { subject, fromName, pageCode } = Astro.props;
     var submitBtn = form.querySelector('.form-submit');
     var originalText = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Enviando...';
+    submitBtn.innerHTML = sendingText;
     msg.className = 'form-msg';
 
     var formData = new FormData(form);
@@ -75,7 +80,7 @@ const { subject, fromName, pageCode } = Astro.props;
     .then(function(res){ return res.json(); })
     .then(function(data){
       if(data.success){
-        msg.textContent = 'Mensagem enviada! Redirecionando para o WhatsApp...';
+        msg.textContent = successText;
         msg.className = 'form-msg show ok';
         form.reset();
         window.open(whatsappUrl, '_blank', 'noopener');
@@ -84,7 +89,7 @@ const { subject, fromName, pageCode } = Astro.props;
       }
     })
     .catch(function(){
-      msg.textContent = 'Não foi possível enviar agora. Tente novamente ou fale via WhatsApp.';
+      msg.textContent = errorText;
       msg.className = 'form-msg show err';
     })
     .finally(function(){

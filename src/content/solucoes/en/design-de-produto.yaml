@@ -1,0 +1,60 @@
+name: "Product Design"
+contactLabel: "Product Design"
+title: "Product Design — Tinnova"
+description: "We combine research, information architecture, and visual identity to create web and mobile products that reflect your brand and truly work for the people who use them."
+
+hero:
+  h1: "Design that solves the user journey, not just the interface."
+  lead: "We combine research, information architecture, and visual identity to create web and mobile products that reflect your brand and truly work for the people who use them."
+  secondaryLinkText: "See the process"
+  image:
+    src: "/images/solucoes/design-de-produto-hero.webp"
+    alt: "Digital product interface in the design process"
+
+challengeText: "A product with a solid technical proposal, but a confusing experience disconnected from the brand, loses conversion and credibility before it even shows what it truly solves."
+
+cenario:
+  h2: "When the idea is good, but the experience doesn't keep up."
+  body:
+    - "Many companies arrive with a solid feature or product proposal, but without an end-to-end user experience thought through, which creates confusion for the user and rework for the development team."
+    - "Jumping straight into development without research, wireframes, and journey validation costs more later, when interface rework already involves finished code."
+  image:
+    src: "/images/solucoes/design-de-produto-cenario.webp"
+    alt: "Mobile app mockup representing the product's final interface"
+
+solucao:
+  lines:
+    - "Research, prototyping, and"
+    - "visual identity before the code."
+  body:
+    - "Tinnova combines market research, competitive analysis, and information architecture with a testable prototyping process, delivering a design that reflects your brand and has already been validated before turning into development."
+
+comoFazemos:
+  lines:
+    - "From business immersion to delivery"
+    - "for development."
+  body:
+    - "We start by diving into your business, goals, and target audience, followed by an analysis of the competition and the experience of similar products in the market."
+    - "We create wireframes connected in a user journey, turned into a navigable prototype for you to test and suggest adjustments before the visual stage."
+    - "The final stage defines the style guide (colors, typography, components) and delivers the complete interface for every screen, ready for the development team."
+
+beneficios:
+  h2: "What changes with a structured design process."
+  subtitle: "Each stage of the process above reduces a specific risk for those launching or redesigning a digital product."
+  items:
+    - "Consistent brand identity across platforms (web, mobile, tablet)."
+    - "User journey validated with a prototype before a single line of code."
+    - "Reduced development rework, because the interface has already been tested."
+    - "Product tested with real users before launch."
+
+aboutCards:
+  - tag: "Recommended for"
+    h3: "Companies launching or redesigning a digital product"
+    body: "Companies launching or redesigning a digital product (web or mobile) that need a validated user experience, not just a good-looking interface."
+  - tag: "Led by Tinnova"
+    h3: "Technology applied to business"
+    body: "Tinnova combines consulting and technical capacity to connect business context, data, and execution, without delivering technology for technology's sake."
+
+proximoPasso:
+  h2: "Let's assess whether your product experience is ready to evolve."
+  body: "Briefly tell us about the product and the audience it serves. Tinnova assesses the current journey before proposing the design process."

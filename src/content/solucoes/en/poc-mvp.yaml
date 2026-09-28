@@ -1,0 +1,60 @@
+name: "POC and MVP"
+contactLabel: "POC / MVP"
+title: "POC and MVP — Tinnova"
+description: "We build a functional MVP, with the minimum scope needed to test your idea with real users and present concrete results to investors."
+
+hero:
+  h1: "Validate your idea before investing in the full product."
+  lead: "We build a functional MVP, with the minimum scope needed to test your idea with real users and present concrete results to investors, before investing in the full product."
+  secondaryLinkText: "See the process"
+  image:
+    src: "/images/solucoes/poc-mvp-hero.webp"
+    alt: "Team validating a digital product prototype"
+
+challengeText: "Investing in the full development of a product before validating whether it solves a real problem is the most expensive way to find out the idea needs to change."
+
+cenario:
+  h2: "When the idea still has no real market validation."
+  body:
+    - "Startups and innovation teams often have a well-defined product idea on paper, but with no confirmation that the market will actually use it and pay for it."
+    - "Going straight to full development, without testing the value proposition with real users, means investing time and money in features that may not matter to the target audience."
+  image:
+    src: "/images/solucoes/poc-mvp-cenario.webp"
+    alt: "Close-up of prototyping and product testing elements"
+
+solucao:
+  lines:
+    - "A minimum product,"
+    - "testable with real users."
+  body:
+    - "Tinnova develops an MVP with the essential features to validate your value proposition, collect the first real feedback, and present an active product — not just an idea — to investors and clients."
+
+comoFazemos:
+  lines:
+    - "From discovery to launch"
+    - "and continuous evolution."
+  body:
+    - "In the discovery phase, we finalize requirements, identify obstacles, and validate the wireframes and user journey with you before any line of code."
+    - "Product design defines visual concepts aligned with business goals, and development follows an agile methodology, with continuous testing throughout the process."
+    - "After launch, we track real usage metrics to guide the next updates. The MVP is the beginning, not the final destination of the product."
+
+beneficios:
+  h2: "What changes with a validated MVP."
+  subtitle: "Each stage of the process above reduces a specific risk for those who haven't yet validated their product idea."
+  items:
+    - "Idea validation with controlled investment, before the full product."
+    - "Faster launch than the competition, with enough features to win over the first users."
+    - "Decisions about next steps based on real usage, not assumptions."
+    - "An active product to present to investors, not just an idea on paper."
+
+aboutCards:
+  - tag: "Recommended for"
+    h3: "Startups and innovation teams"
+    body: "Startups and innovation teams that need to validate a digital product idea before the full investment."
+  - tag: "Led by Tinnova"
+    h3: "Technology applied to business"
+    body: "Tinnova combines consulting and technical capacity to connect business context, data, and execution, without delivering technology for technology's sake."
+
+proximoPasso:
+  h2: "Let's assess whether your idea is ready to become an MVP."
+  body: "Briefly tell us about the idea and the audience you want to validate it with. Tinnova assesses the minimum scope before proposing the development plan."

@@ -1,6 +1,13 @@
+---
+import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
+---
 <section class="pilares" id="pilares">
   <div class="container">
-    <p class="pilares-label">Experiência que sustenta decisões importantes.</p>
+    <p class="pilares-label">{t('pillars.label')}</p>
     <div class="pilares-logos">
       <img src="/logos/pilares/embraer-white.svg" alt="Embraer">
       <img src="/logos/pilares/pagbank-white.svg" alt="PagBank">

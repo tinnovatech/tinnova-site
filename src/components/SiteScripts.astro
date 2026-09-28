@@ -1,26 +1,28 @@
 <script is:inline>
 (function(){
-  // ---- Desktop dropdowns ----
-  var dropdowns = document.querySelectorAll('.nav-item[data-dropdown]');
+  // ---- Desktop dropdowns (Soluções + language selector) ----
+  var dropdowns = document.querySelectorAll('[data-dropdown]');
+  function closeAllDropdowns(){
+    dropdowns.forEach(function(d){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); });
+  }
   dropdowns.forEach(function(item){
     var btn = item.querySelector('button');
     btn.addEventListener('click', function(e){
       e.stopPropagation();
       var isOpen = item.classList.contains('open');
-      dropdowns.forEach(function(d){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); });
+      closeAllDropdowns();
       if(!isOpen){
         item.classList.add('open');
         btn.setAttribute('aria-expanded','true');
       }
     });
   });
-  document.addEventListener('click', function(){
-    dropdowns.forEach(function(d){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); });
+  document.addEventListener('click', closeAllDropdowns);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllDropdowns();
   });
   document.querySelectorAll('[data-close-dropdown]').forEach(function(a){
-    a.addEventListener('click', function(){
-      dropdowns.forEach(function(d){ d.classList.remove('open'); });
-    });
+    a.addEventListener('click', closeAllDropdowns);
   });
 
   // ---- Mobile menu open/close ----

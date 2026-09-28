@@ -1,0 +1,60 @@
+name: "Diseño de Producto"
+contactLabel: "Diseño de Producto"
+title: "Diseño de Producto — Tinnova"
+description: "Unimos investigación, arquitectura de información e identidad visual para crear productos web y mobile que reflejan tu marca y funcionan de verdad para quien los usa."
+
+hero:
+  h1: "Diseño que resuelve el recorrido del usuario, no solo la interfaz."
+  lead: "Unimos investigación, arquitectura de información e identidad visual para crear productos web y mobile que reflejan tu marca y funcionan de verdad para quien los usa."
+  secondaryLinkText: "Conoce el proceso"
+  image:
+    src: "/images/solucoes/design-de-produto-hero.webp"
+    alt: "Interfaz de producto digital en proceso de diseño"
+
+challengeText: "Un producto con una buena propuesta técnica, pero con una experiencia confusa o desconectada de la marca, pierde conversión y credibilidad antes incluso de mostrar lo que realmente resuelve."
+
+cenario:
+  h2: "Cuando la idea es buena, pero la experiencia no la acompaña."
+  body:
+    - "Muchas empresas llegan con una funcionalidad o propuesta de producto sólida, pero sin una experiencia de uso pensada de punta a punta, lo que genera confusión para el usuario y retrabajo para el equipo de desarrollo."
+    - "Pasar directo al desarrollo sin investigación, wireframes ni validación del recorrido cuesta más caro después, cuando el retrabajo de interfaz ya involucra código terminado."
+  image:
+    src: "/images/solucoes/design-de-produto-cenario.webp"
+    alt: "Mockup de aplicación móvil que representa la interfaz final del producto"
+
+solucao:
+  lines:
+    - "Investigación, prototipado e"
+    - "identidad visual antes del código."
+  body:
+    - "Tinnova une investigación de mercado, análisis de la competencia y arquitectura de información a un proceso de prototipado probable, entregando un diseño que refleja tu marca y que ya fue validado antes de convertirse en desarrollo."
+
+comoFazemos:
+  lines:
+    - "De la inmersión en el negocio a la entrega"
+    - "para el desarrollo."
+  body:
+    - "Comenzamos sumergiéndonos en tu negocio, tus objetivos y tu público objetivo, seguido de un análisis de la competencia y de la experiencia de productos similares en el mercado."
+    - "Creamos wireframes conectados en un recorrido de usuario, convertidos en un prototipo navegable para que pruebes y sugieras ajustes antes de la etapa visual."
+    - "La etapa final define la guía de estilo (colores, tipografía, componentes) y entrega la interfaz completa de cada pantalla, lista para el equipo de desarrollo."
+
+beneficios:
+  h2: "Lo que cambia con un proceso de diseño estructurado."
+  subtitle: "Cada etapa del proceso anterior reduce un riesgo específico de quien está lanzando o rediseñando un producto digital."
+  items:
+    - "Identidad de marca consistente entre plataformas (web, mobile, tablet)."
+    - "Recorrido de usuario validado con prototipo antes de escribir una sola línea de código."
+    - "Reducción del retrabajo de desarrollo, porque la interfaz ya fue probada."
+    - "Producto probado con usuarios reales antes del lanzamiento."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas que lanzan o rediseñan un producto digital"
+    body: "Empresas que lanzan o rediseñan un producto digital (web o mobile) que necesita una experiencia de uso validada, no solo una interfaz bonita."
+  - tag: "Conducido por Tinnova"
+    h3: "Tecnología aplicada al negocio"
+    body: "Tinnova combina consultoría y capacidad técnica para conectar contexto de negocio, datos y ejecución, sin entregar tecnología por la tecnología misma."
+
+proximoPasso:
+  h2: "Evaluemos si la experiencia de tu producto está lista para evolucionar."
+  body: "Cuéntanos brevemente el producto y el público al que atiende. Tinnova evalúa el recorrido actual antes de proponer el proceso de diseño."

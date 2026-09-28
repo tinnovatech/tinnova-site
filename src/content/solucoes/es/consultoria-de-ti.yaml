@@ -1,0 +1,61 @@
+name: "Consultoría de TI"
+contactLabel: "Consultoría de TI"
+title: "Consultoría de TI — Tinnova"
+description: "Diagnóstico técnico real, decisiones de arquitectura bien fundamentadas y ejecución asumida de principio a fin para empresas Mid Market y Enterprise."
+
+hero:
+  h1: "Consultoría de TI para quien necesita evolucionar la tecnología sin detener la operación."
+  lead: "Diagnóstico técnico real, decisiones de arquitectura bien fundamentadas y ejecución asumida de principio a fin para empresas Mid Market y Enterprise con estructura de TI propia, pero sin capacidad o especialización de sobra para atender todo al mismo tiempo."
+  secondaryLinkText: "Saber Más"
+  image:
+    src: "/images/solucoes/consultoria-de-ti-hero.webp"
+    alt: "Equipo técnico en una reunión de arquitectura y roadmap de TI"
+
+challengeText: "La mayoría de las consultorías de TI entregan diagnóstico y recomendación. Pocas se quedan para garantizar que el cambio realmente ocurra, con el equipo interno sosteniendo la operación al mismo tiempo."
+
+cenario:
+  h2: "Cuando la estructura de TI crece más rápido que la capacidad de decidir sobre ella."
+  body:
+    - "Las empresas con operación crítica rara vez carecen de tecnología: les falta tiempo y claridad para decidir sobre ella. Backlog represado, sistemas heredados que nadie quiere tocar, arquitectura que creció por acumulación en vez de por proyecto. El equipo interno ya está en modo de sostenimiento, sin espacio para detenerse y repensar la estructura como un todo."
+    - "Contratar otra consultoría más para escuchar \"reescriban todo\" o \"migren a la nube\" sin entender el contexto del negocio solo añade riesgo a un escenario ya frágil. Lo que falta no es una opinión técnica: es alguien que entienda el entorno antes de recomendar cualquier cambio, y que siga presente después de la recomendación."
+  image:
+    src: "/images/solucoes/consultoria-de-ti-cenario.webp"
+    alt: "Estructura de servidores e infraestructura de TI en operación"
+
+solucao:
+  lines:
+    - "Consultoría que participa de la decisión"
+    - "y de la ejecución, no solo del informe."
+  body:
+    - "La consultoría de TI de Tinnova combina una evaluación técnica real del entorno — arquitectura, dependencias, deuda técnica, riesgos de seguridad y escala — con la capacidad de ejecutar el cambio recomendado, con el mismo equipo que hizo el diagnóstico."
+    - "Esto evita el escenario más común del mercado: un documento de recomendaciones que queda archivado porque nadie tiene capacidad de ejecutar lo propuesto."
+
+comoFazemos:
+  lines:
+    - "De la evaluación del entorno real"
+    - "a la ejecución acompañada."
+  body:
+    - "Comenzamos mapeando el entorno tal como está hoy — arquitectura, integraciones, dependencias críticas, deuda técnica y puntos de riesgo de seguridad y escala. No es una auditoría de checklist: es entender por qué el entorno llegó a ese estado y qué afectará cada cambio propuesto antes de recomendar cualquier cosa."
+    - "La ejecución ocurre con transferencia continua de conocimiento al equipo interno, no como una caja negra entregada al final del proyecto. El objetivo es que la estructura interna salga más capacitada de lo que entró, no más dependiente de la consultoría."
+    - "A partir de ese mapeo, priorizamos por impacto real en el negocio y riesgo operacional, no por complejidad técnica aislada. El roadmap resultante se discute con el equipo interno: la decisión de arquitectura no sale lista de una sala cerrada, se valida con quien convivirá con ella en el día a día."
+
+beneficios:
+  h2: "Lo que cambia después de la consultoría."
+  subtitle: "Cada etapa del método anterior resuelve un riesgo específico que sienten en la práctica las empresas con TI propia y alta complejidad técnica."
+  items:
+    - "Decisiones de arquitectura fundamentadas en una evaluación real del entorno, no en una recomendación genérica de mercado."
+    - "Backlog priorizado por impacto en el negocio, reduciendo el retrabajo y el desperdicio de decisiones técnicas aisladas."
+    - "Roadmap tecnológico validado con el equipo interno, no impuesto desde afuera."
+    - "Conocimiento transferido a lo largo del proyecto, reduciendo la dependencia de la consultoría después de la entrega."
+
+aboutCards:
+  - tag: "Indicado para"
+    h3: "Empresas Mid Market y Enterprise"
+    body: "Empresas con estructura de TI propia, pero con backlog, complejidad de arquitectura o decisiones estratégicas más allá de la capacidad o especialización disponible hoy en el equipo interno."
+  - tag: "Conducido por Tinnova"
+    h3: "Tecnología aplicada al negocio"
+    body: "Tinnova combina consultoría y capacidad técnica para conectar contexto de negocio, datos y ejecución, sin entregar tecnología por la tecnología misma."
+
+proximoPasso:
+  h2: "Evaluemos si tu estructura de TI está lista para el próximo paso."
+  body: "Cuéntanos brevemente el escenario técnico actual. Tinnova evalúa el contexto antes de recomendar cualquier cambio de arquitectura o tecnología."

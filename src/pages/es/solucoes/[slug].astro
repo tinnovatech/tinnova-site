@@ -1,9 +1,9 @@
 ---
-import SolutionsPage from '../../layouts/SolutionsPage.astro';
-import { getSolucoesForLocale } from '../../content/solucoes-utils';
+import SolutionsPage from '../../../layouts/SolutionsPage.astro';
+import { getSolucoesForLocale } from '../../../content/solucoes-utils';
 
 export async function getStaticPaths() {
-  const entries = await getSolucoesForLocale('pt-BR');
+  const entries = await getSolucoesForLocale('es');
   return entries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
