@@ -9,7 +9,12 @@ const steps = t<{ num: string; title: string; text: string }[]>('method.steps');
 <section class="metodo" id="metodo">
   <div class="metodo-title"><p class="eyebrow">{t('method.eyebrow')}</p><h2>{t('method.title')}</h2></div>
   <div class="metodo-content">
-    <div class="metodo-image"><img src="/images/metodo-visao.webp" alt={t('method.imageAlt')}></div>
+    <div class="metodo-image">
+      <picture>
+        <source media="(max-width:1300px)" srcset="/images/metodo-visao-MOBILE.webp">
+        <img src="/images/metodo-visao.webp" alt={t('method.imageAlt')}>
+      </picture>
+    </div>
     <div class="metodo-steps-wrap">
       <div class="metodo-steps">
         {steps.map((step) => (
