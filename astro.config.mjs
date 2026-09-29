@@ -24,4 +24,9 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    // Page CSS is small (~8-12kb); inlining it avoids extra render-blocking
+    // <link rel="stylesheet"> round-trips for styles needed on first paint.
+    inlineStylesheets: 'always',
+  },
 });
