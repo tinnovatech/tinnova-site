@@ -11,7 +11,7 @@ hero:
     src: "/images/solucoes/outsourcing-hero.webp"
     alt: "Team gathered planning a development project"
 
-challengeText: "Building an internal technology team from scratch requires specialized recruiting, process structuring, and time — resources most companies don't have to spare when demand is already at the door."
+challengeText: "Building an internal technology team from scratch requires specialized recruiting, process structuring, and time, resources most companies don't have to spare when demand is already at the door."
 
 cenario:
   h2: "When development demand arrives faster than the capacity to hire."

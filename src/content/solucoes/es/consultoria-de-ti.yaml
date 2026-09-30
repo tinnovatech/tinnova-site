@@ -27,7 +27,7 @@ solucao:
     - "Consultoría que participa de la decisión"
     - "y de la ejecución, no solo del informe."
   body:
-    - "La consultoría de TI de Tinnova combina una evaluación técnica real del entorno — arquitectura, dependencias, deuda técnica, riesgos de seguridad y escala — con la capacidad de ejecutar el cambio recomendado, con el mismo equipo que hizo el diagnóstico."
+    - "La consultoría de TI de Tinnova combina una evaluación técnica real del entorno (arquitectura, dependencias, deuda técnica, riesgos de seguridad y escala) con la capacidad de ejecutar el cambio recomendado, con el mismo equipo que hizo el diagnóstico."
     - "Esto evita el escenario más común del mercado: un documento de recomendaciones que queda archivado porque nadie tiene capacidad de ejecutar lo propuesto."
 
 comoFazemos:
@@ -35,7 +35,7 @@ comoFazemos:
     - "De la evaluación del entorno real"
     - "a la ejecución acompañada."
   body:
-    - "Comenzamos mapeando el entorno tal como está hoy — arquitectura, integraciones, dependencias críticas, deuda técnica y puntos de riesgo de seguridad y escala. No es una auditoría de checklist: es entender por qué el entorno llegó a ese estado y qué afectará cada cambio propuesto antes de recomendar cualquier cosa."
+    - "Comenzamos mapeando el entorno tal como está hoy: arquitectura, integraciones, dependencias críticas, deuda técnica y puntos de riesgo de seguridad y escala. No es una auditoría de checklist: es entender por qué el entorno llegó a ese estado y qué afectará cada cambio propuesto antes de recomendar cualquier cosa."
     - "La ejecución ocurre con transferencia continua de conocimiento al equipo interno, no como una caja negra entregada al final del proyecto. El objetivo es que la estructura interna salga más capacitada de lo que entró, no más dependiente de la consultoría."
     - "A partir de ese mapeo, priorizamos por impacto real en el negocio y riesgo operacional, no por complejidad técnica aislada. El roadmap resultante se discute con el equipo interno: la decisión de arquitectura no sale lista de una sala cerrada, se valida con quien convivirá con ella en el día a día."
 
