@@ -6,7 +6,7 @@
 // Permissions-Policy are header-only and must be set at the edge (Cloudflare).
 //
 // Third-party hosts below come from the GTM container (GA4, Google Ads,
-// Facebook Pixel, LinkedIn Insight, Hotjar, Mouseflow, RD Station) plus
+// Facebook Pixel, LinkedIn Insight, Hotjar, RD Station) plus
 // Clarity, Google Fonts and Web3Forms. Adding a new tag in GTM that loads a
 // script from another domain requires adding that domain to script-src.
 const scriptHosts = [
@@ -19,7 +19,6 @@ const scriptHosts = [
   'https://connect.facebook.net',
   'https://snap.licdn.com',
   'https://*.hotjar.com',
-  'https://cdn.mouseflow.com',
   'https://d335luupugsy2.cloudfront.net',
   'https://*.rdstation.com.br',
   'https://*.rd.services',
