@@ -1,6 +1,7 @@
 ---
 import '../styles/base.css';
 import Seo from '../components/Seo.astro';
+import SecurityMeta from '../components/SecurityMeta.astro';
 import GtmHead from '../components/GtmHead.astro';
 import GtmBody from '../components/GtmBody.astro';
 import ClarityTag from '../components/ClarityTag.astro';
@@ -21,10 +22,11 @@ const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 <!DOCTYPE html>
 <html lang={LOCALE_META[currentLocale].hreflang}>
 <head>
+<meta charset="UTF-8">
+<SecurityMeta />
 <LangDetectScript />
 <GtmHead />
 <ClarityTag />
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <Seo title={title} description={description} image={image} />
 <link rel="icon" type="image/svg+xml" href="/logos/tinnova-symbol.svg">

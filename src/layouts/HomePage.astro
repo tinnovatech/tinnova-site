@@ -1,6 +1,7 @@
 ---
 import '../styles/base.css';
 import Seo from '../components/Seo.astro';
+import SecurityMeta from '../components/SecurityMeta.astro';
 import GtmHead from '../components/GtmHead.astro';
 import GtmBody from '../components/GtmBody.astro';
 import ClarityTag from '../components/ClarityTag.astro';
@@ -26,10 +27,11 @@ const description = t('site.defaultDescription');
 <!DOCTYPE html>
 <html lang={LOCALE_META[currentLocale].hreflang}>
 <head>
+<meta charset="UTF-8">
+<SecurityMeta />
 <LangDetectScript />
 <GtmHead />
 <ClarityTag />
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preload" as="image" href="/images/hero-banner.webp" fetchpriority="high" media="(max-width:1300px)">
 <Seo title={title} description={description} />
