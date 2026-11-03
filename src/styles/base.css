@@ -22,7 +22,9 @@
   --border-navy:rgba(41,51,84,0.16);
   --border-navy-2:rgba(41,51,84,0.25);
   --content-max:1536px;
-  --gutter:132px;
+  /* Side gutter: 132px on wide screens, easing down to 64px just above the
+     mobile breakpoint (1150px) so laptops between 1151 and ~1900px keep room. */
+  --gutter:clamp(64px, 7vw, 132px);
   --page-pad:max(var(--gutter), calc((100% - var(--content-max)) / 2));
 }
 
@@ -108,7 +110,8 @@ h1,h2,h3,p{margin:0;}
   justify-content:center;
   gap:30px;
   height:72px;
-  padding:0 99px;
+  /* Inner padding keeps the logo aligned with the page content: outer 32px + this = --gutter. */
+  padding:0 calc(var(--gutter) - 33px);
   background:rgba(247,244,249,0.8);
   border:1px solid var(--border-navy);
   backdrop-filter:blur(8px);

@@ -1,27 +1,45 @@
 ---
 import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
+import { METHOD_ICONS } from '../content/method-icons';
 
 const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 const t = useTranslations(currentLocale);
 const steps = t<{ num: string; title: string; text: string }[]>('method.steps');
 ---
 <section class="metodo" id="metodo">
-  <div class="metodo-title"><p class="eyebrow">{t('method.eyebrow')}</p><h2>{t('method.title')}</h2></div>
-  <div class="metodo-content">
-    <div class="metodo-image">
-      <picture>
-        <source media="(max-width:1300px)" srcset="/images/metodo-visao-MOBILE.webp">
-        <img src="/images/metodo-visao.webp" alt={t('method.imageAlt')}>
-      </picture>
-    </div>
-    <div class="metodo-steps-wrap">
-      <div class="metodo-steps">
-        {steps.map((step) => (
-          <div class="metodo-step"><span class="num">{step.num}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></div>
-        ))}
-      </div>
-      <a href="#contato" class="btn-primary" style="align-self:flex-start;">{t('method.cta')}</a>
-    </div>
+  <div class="section-intro">
+    <p class="eyebrow">{t('method.eyebrow')}</p>
+    <h2>{t('method.title')}</h2>
   </div>
+
+  <div class="metodo-track">
+    <span class="metodo-line" aria-hidden="true"><span></span></span>
+    <ol class="metodo-steps">
+      {steps.map((step, i) => (
+        <li class="metodo-step" style={`--i:${i}`}>
+          <span class="metodo-node">{step.num}</span>
+          <div class="metodo-card">
+            <span class="metodo-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={METHOD_ICONS[i]} /></span>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+
+  <a href="#contato" class="btn-primary">{t('method.cta')}</a>
 </section>
+
+<script is:inline>
+(function(){
+  // Starts the line fill / step reveal sequence the first time the steps come into view.
+  var root = document.getElementById('metodo');
+  if(!root) return;
+  var io = new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting){ root.classList.add('is-in'); io.disconnect(); }
+  }, { threshold: 0.25 });
+  io.observe(root.querySelector('.metodo-track'));
+})();
+</script>

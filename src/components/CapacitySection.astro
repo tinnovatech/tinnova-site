@@ -9,10 +9,10 @@ const items = t<string[]>('capacity.items');
 <section class="capacidade" id="capacidade-tecnica">
   <div class="container">
     <div class="capacidade-copy"><p class="eyebrow">{t('capacity.eyebrow')}</p><h2>{t('capacity.title')}</h2><p>{t('capacity.text')}</p></div>
-    <div class="capacidade-list">
+    <ol class="capacidade-list">
       {items.map((item, i) => (
-        <div class="capacidade-row"><span class="num">{String(i + 1).padStart(2, '0')}</span><span class="title">{item}</span><span class="arrow">↗</span></div>
+        <li class="capacidade-row"><span class="num">{String(i + 1).padStart(2, '0')}</span><span class="title">{item}</span></li>
       ))}
-    </div>
+    </ol>
   </div>
 </section>

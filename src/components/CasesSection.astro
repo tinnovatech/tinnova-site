@@ -1,28 +1,75 @@
 ---
 import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
+import { CASE_VISUALS as visuals, type CaseItem } from '../content/cases-visuals';
 
 const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 const t = useTranslations(currentLocale);
-const items = t<{ logoAlt: string; eyebrow: string; title: string; text: string }[]>('cases.items');
-
-const visuals = [
-  { image: '/images/case-embraer.webp', logo: '/logos/embraer-logo.svg', logoStyle: 'height:16px;width:auto;display:block;filter:brightness(0) invert(1);' },
-  { image: '/images/case-serasa.webp', logo: '/logos/serasa-logo.svg', logoStyle: 'height:25px;width:auto;display:block;filter:brightness(0) invert(1);object-fit:contain;max-width:100%;' },
-  { image: '/images/case-pagseguro.webp', logo: '/logos/pagseguro-logo.svg', logoStyle: 'height:22px;width:auto;display:block;' },
-];
+const items = t<CaseItem[]>('cases.items');
 ---
 <section class="cases" id="cases">
   <div class="section-intro"><p class="eyebrow">{t('cases.eyebrow')}</p><h2>{t('cases.title')}</h2></div>
   <p class="section-copy">{t('cases.intro')}</p>
+
+  {/* Mobile only: one logo tab per case; the grid below then shows just the active card. */}
+  <div class="cases-tabs" role="tablist">
+    {items.map((item, i) => (
+      <button type="button" role="tab" class:list={['cases-tab', { 'is-active': i === 0 }]} aria-selected={i === 0 ? 'true' : 'false'}>
+        <img src={visuals[i].logo} alt={item.logoAlt} style={visuals[i].logoStyle} />
+        <span class="cases-progress" aria-hidden="true"><span></span></span>
+      </button>
+    ))}
+  </div>
+
   <div class="cases-grid">
     {items.map((item, i) => (
-      <article class="case-card">
-        <div class="case-image" style={`background-image:url('${visuals[i].image}');`}>
-          <span class="case-logo-badge"><img src={visuals[i].logo} alt={item.logoAlt} style={visuals[i].logoStyle} /></span>
+      <article class:list={['case-card', { 'is-active': i === 0 }]} tabindex="0">
+        <img class="case-photo" src={visuals[i].image} style={`--focus:${visuals[i].focus}`} alt="" width="1200" height="800" loading="lazy" decoding="async" />
+        <span class="case-logo"><img src={visuals[i].logo} alt={item.logoAlt} style={visuals[i].logoStyle} /></span>
+        <div class="case-body">
+          <span class="case-eyebrow">{item.eyebrow}</span>
+          <h3>{item.title}</h3>
+          <div class="case-text"><p>{item.text}</p></div>
         </div>
-        <div class="case-body"><span class="case-eyebrow">{item.eyebrow}</span><h3>{item.title}</h3><p>{item.text}</p></div>
       </article>
     ))}
   </div>
+
+  {/* Mobile only: dot navigation under the card, mirroring the logo tabs above. */}
+  <div class="cases-dots">
+    {items.map((item, i) => (
+      <button type="button" class:list={['cases-dot', { 'is-active': i === 0 }]} aria-label={item.eyebrow} aria-current={i === 0 ? 'true' : undefined}></button>
+    ))}
+  </div>
 </section>
+
+<script is:inline>
+(function(){
+  // Mobile: logo tabs pick the visible case. The active tab's progress bar runs
+  // an 8s CSS animation (only while the tabs are displayed) and advances to the
+  // next case when it ends; hover or the section being off screen pauses it.
+  var root = document.getElementById('cases');
+  if(!root) return;
+  var tabs = Array.prototype.slice.call(root.querySelectorAll('.cases-tab'));
+  var cards = Array.prototype.slice.call(root.querySelectorAll('.case-card'));
+  var dots = Array.prototype.slice.call(root.querySelectorAll('.cases-dot'));
+  function select(i){
+    tabs.forEach(function(t, k){ t.classList.toggle('is-active', k === i); t.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+    cards.forEach(function(c, k){ c.classList.toggle('is-active', k === i); });
+    dots.forEach(function(d, k){ d.classList.toggle('is-active', k === i); if(k === i){ d.setAttribute('aria-current', 'true'); } else { d.removeAttribute('aria-current'); } });
+  }
+  tabs.forEach(function(tab, i){
+    tab.addEventListener('click', function(){ select(i); });
+    tab.querySelector('.cases-progress span').addEventListener('animationend', function(){ select((i + 1) % tabs.length); });
+  });
+  dots.forEach(function(dot, i){ dot.addEventListener('click', function(){ select(i); }); });
+  var hovering = false, visible = false;
+  function sync(){ root.classList.toggle('is-paused', hovering || !visible); }
+  // Pointer events with a type check: a tap also emulates mouseenter (with no
+  // matching mouseleave), which would otherwise pause the rotation for good.
+  root.addEventListener('pointerenter', function(e){ if(e.pointerType === 'mouse'){ hovering = true; sync(); } });
+  root.addEventListener('pointerleave', function(e){ if(e.pointerType === 'mouse'){ hovering = false; sync(); } });
+  new IntersectionObserver(function(e){ visible = e[0].isIntersecting; sync(); }, { threshold: 0.3 }).observe(root);
+  sync();
+})();
+</script>

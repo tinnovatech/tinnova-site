@@ -40,10 +40,23 @@
       { "title": "Turn demand into decisions", "text": "Understand context, priority, and impact before defining technology." }
     ]
   },
+  "services": {
+    "eyebrow": "How we help",
+    "titleLines": ["Consulting, custom software,", "and squads for real challenges"],
+    "intro": "Tinnova combines consulting and technical capacity to define the path, build the solution, and sustain its evolution.",
+    "cta": "Talk to a specialist",
+    "more": "Learn more",
+    "items": [
+      { "slug": "consultoria-de-ti", "tag": "Business digitalization", "title": "IT Consulting", "text": "Diagnosis and direction for your IT" },
+      { "slug": "servicos-de-ti-gerenciados", "tag": "Business digitalization", "title": "Managed IT Services", "text": "Stable, monitored, and secure operations" },
+      { "slug": "outsourcing", "tag": "Agile staffing", "title": "Outsourcing", "text": "Specialists integrated into your team" },
+      { "slug": "poc-mvp", "tag": "Product launch", "title": "POC and MVP", "text": "Validate ideas before scaling" },
+      { "slug": "design-de-produto", "tag": "Product launch", "title": "Product Design", "text": "UI/UX from concept to prototype" }
+    ]
+  },
   "method": {
     "eyebrow": "How we work",
     "title": "Before we build, we understand what needs to change.",
-    "imageAlt": "Abstract 3D rendering of a glass structure",
     "steps": [
       { "num": "01", "title": "Understand", "text": "We map context, operations, objectives, and constraints." },
       { "num": "02", "title": "Define", "text": "We prioritize the path, scope, and the right structure." },

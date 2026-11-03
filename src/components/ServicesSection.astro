@@ -1,0 +1,90 @@
+---
+import { DEFAULT_LOCALE, SOLUTIONS_ORDER, type Locale } from '../i18n/config';
+import { localeHref, useTranslations } from '../i18n/utils';
+import { SERVICE_IMAGES, type ServiceItem } from '../content/services-images';
+
+const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
+const t = useTranslations(currentLocale);
+// Same order as the site's solutions menu.
+const rank = (slug: string) => SOLUTIONS_ORDER.indexOf(slug as (typeof SOLUTIONS_ORDER)[number]);
+const items = [...t<ServiceItem[]>('services.items')].sort((a, b) => rank(a.slug) - rank(b.slug));
+const titleLines = t<string[]>('services.titleLines');
+// The first panel (reading order) starts open.
+const START = 0;
+---
+<section class="servicos" id="solucoes">
+  <div class="section-intro">
+    <p class="eyebrow">{t('services.eyebrow')}</p>
+    <h2>{titleLines.map((line, i) => <>{line}{i < titleLines.length - 1 && <> <br /></>}</>)}</h2>
+  </div>
+  <p class="section-copy">{t('services.intro')}</p>
+
+  <div class="sol-panels">
+    {items.map((item, i) => {
+      const img = SERVICE_IMAGES[item.slug];
+      return (
+        <a class:list={['sol-panel', { 'is-open': i === START }]} href={localeHref(currentLocale, `/solucoes/${item.slug}/`)}>
+          <img
+            src={img.src}
+            srcset={img.srcset}
+            sizes="(max-width:1150px) 100vw, 55vw"
+            style={`object-position:${img.focus}`}
+            alt=""
+            width="1200"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="sol-vertical" aria-hidden="true">{item.title}</span>
+          <span class="sol-body">
+            <span class="sol-tag"><span class="sol-dot"></span>{item.tag}</span>
+            <span class="sol-title">{item.title}</span>
+            <span class="sol-text">{item.text}</span>
+            <span class="sol-more">{t('services.more')} <span aria-hidden="true">↗</span></span>
+          </span>
+        </a>
+      );
+    })}
+  </div>
+
+  <a href="#contato" class="btn-primary">{t('services.cta')}</a>
+</section>
+
+<script is:inline>
+(function(){
+  // Expanding panels: hover (desktop) or keyboard focus opens a panel.
+  // Stacked layout (mobile): tapping a closed panel expands it and tapping the
+  // open one collapses it; the solution page opens only from its "Conhecer
+  // solução" button.
+  var root = document.getElementById('solucoes');
+  if(!root) return;
+  var panels = Array.prototype.slice.call(root.querySelectorAll('.sol-panel'));
+  var canHover = window.matchMedia('(hover: hover) and (min-width: 1151px)');
+  var stacked = window.matchMedia('(max-width: 1150px)');
+  function open(p){
+    panels.forEach(function(x){ x.classList.toggle('is-open', x === p); });
+    // In the stacked (mobile) layout a panel above may collapse and pull the
+    // opened one up; once the height transition ends, bring it fully into view.
+    if(stacked.matches){
+      setTimeout(function(){ p.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }, 650);
+    }
+  }
+  panels.forEach(function(p){
+    p.addEventListener('mouseenter', function(){ if(canHover.matches) open(p); });
+    // A tap also focuses the link; only keyboard focus (:focus-visible) should
+    // open it here, otherwise the tap's click would find it open and navigate.
+    p.addEventListener('focus', function(){ if(p.matches(':focus-visible')) open(p); });
+    p.addEventListener('click', function(e){
+      var isOpen = p.classList.contains('is-open');
+      if(stacked.matches){
+        if(isOpen && e.target.closest('.sol-more')) return;
+        e.preventDefault();
+        if(isOpen) p.classList.remove('is-open');
+        else open(p);
+        return;
+      }
+      if(!isOpen){ e.preventDefault(); open(p); }
+    });
+  });
+})();
+</script>

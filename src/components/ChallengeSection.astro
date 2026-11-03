@@ -1,21 +1,25 @@
 ---
 import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
+import { CHALLENGE_ICONS as icons } from '../content/challenge-icons';
 
 const currentLocale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale;
 const t = useTranslations(currentLocale);
 const cards = t<{ title: string; text: string }[]>('challenge.cards');
-const icons = ['cloud-sync.svg', 'network-nodes-1.svg', 'box-arrows.svg', 'network-nodes-2.svg'];
 ---
 <section class="desafio" id="desafio-real">
-  <div class="section-intro">
+  <div class="desafio-copy">
     <p class="eyebrow">{t('challenge.eyebrow')}</p>
     <h2>{t('challenge.title')}</h2>
+    <p class="desafio-intro">{t('challenge.intro')}</p>
   </div>
-  <p class="section-copy">{t('challenge.intro')}</p>
-  <div class="challenge-grid">
+  <div class="desafio-grid">
     {cards.map((card, i) => (
-      <div class="challenge-card"><img src={`/logos/desafio/${icons[i]}`} alt="" aria-hidden="true"><h3>{card.title}</h3><p>{card.text}</p></div>
+      <article class="desafio-card">
+        <span class="desafio-icon" style={`--icon:url('${icons[i]}')`} aria-hidden="true"></span>
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+      </article>
     ))}
   </div>
 </section>

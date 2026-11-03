@@ -40,10 +40,23 @@
       { "title": "Transformar demanda em decisão", "text": "Entender contexto, prioridade e impacto antes de definir tecnologia." }
     ]
   },
+  "services": {
+    "eyebrow": "Como ajudamos",
+    "titleLines": ["Consultoria, software sob", "medida e squads para desafios reais"],
+    "intro": "A Tinnova combina consultoria e capacidade técnica para definir o caminho, construir a solução e sustentar sua evolução.",
+    "cta": "Fale com um especialista",
+    "more": "Conhecer solução",
+    "items": [
+      { "slug": "consultoria-de-ti", "tag": "Digitalização de negócios", "title": "Consultoria de TI", "text": "Diagnóstico e direção para sua TI" },
+      { "slug": "servicos-de-ti-gerenciados", "tag": "Digitalização de negócios", "title": "Serviços de TI Gerenciados", "text": "Operação estável, monitorada e segura" },
+      { "slug": "outsourcing", "tag": "Alocação Ágil", "title": "Outsourcing", "text": "Especialistas integrados ao seu time" },
+      { "slug": "poc-mvp", "tag": "Lançamento de produto", "title": "POC e MVP", "text": "Valide ideias antes de escalar" },
+      { "slug": "design-de-produto", "tag": "Lançamento de produto", "title": "Design de Produto", "text": "UI/UX do conceito ao protótipo" }
+    ]
+  },
   "method": {
     "eyebrow": "Nossa forma de trabalhar",
     "title": "Antes de construir, entendemos o que precisa mudar.",
-    "imageAlt": "Renderização 3D abstrata de estrutura de vidro",
     "steps": [
       { "num": "01", "title": "Entender", "text": "Mapeamos contexto, operação, objetivos e restrições." },
       { "num": "02", "title": "Definir", "text": "Priorizamos o caminho, o escopo e a estrutura adequada." },
