@@ -43,7 +43,9 @@ const csp = [
   `frame-src ${frameHosts.join(' ')}`,
   "object-src 'none'",
   "base-uri 'self'",
-  "form-action 'self' https://api.web3forms.com",
+  // www.facebook.com: the Facebook Pixel (via GTM) posts its automatic click
+  // events to /tr/ through a form submission, which form-action governs.
+  "form-action 'self' https://api.web3forms.com https://www.facebook.com",
   'upgrade-insecure-requests',
 ].join('; ');
 ---
