@@ -1,53 +1,20 @@
 ---
-// GitHub Pages doesn't let us set HTTP response headers, so the policies that
-// browsers also accept via <meta> live here. Must come before any <script> or
-// <link> in <head>: a meta CSP only applies to content parsed after it.
-// HSTS, X-Frame-Options/frame-ancestors, X-Content-Type-Options and
-// Permissions-Policy are header-only and must be set at the edge (Cloudflare).
+// Security headers are set at the edge, by the Cloudflare Transform Rule on the
+// tinnova.com.br zone (ruleset 865df0efa19d4f5fad5bf75df6471e25).
 //
-// Third-party hosts below come from the GTM container (GA4, Google Ads,
-// Facebook Pixel, LinkedIn Insight, Hotjar, RD Station) plus
-// Clarity, Google Fonts and Web3Forms. Adding a new tag in GTM that loads a
-// script from another domain requires adding that domain to script-src.
-const scriptHosts = [
-  'https://*.googletagmanager.com',
-  'https://*.google-analytics.com',
-  'https://www.googleadservices.com',
-  'https://googleads.g.doubleclick.net',
-  'https://www.google.com',
-  'https://*.clarity.ms',
-  'https://connect.facebook.net',
-  'https://snap.licdn.com',
-  'https://*.hotjar.com',
-  'https://d335luupugsy2.cloudfront.net',
-  'https://*.rdstation.com.br',
-  'https://*.rd.services',
-];
-
-const frameHosts = [
-  'https://*.googletagmanager.com',
-  'https://td.doubleclick.net',
-  'https://www.facebook.com',
-  'https://*.hotjar.com',
-  'https://*.rdstation.com.br',
-];
-
-const csp = [
-  "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' ${scriptHosts.join(' ')}`,
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.hotjar.com https://*.rdstation.com.br",
-  "font-src 'self' data: https://fonts.gstatic.com https://*.hotjar.com",
-  "img-src 'self' data: blob: https:",
-  "connect-src 'self' https: wss://*.hotjar.com",
-  "worker-src 'self' blob:",
-  `frame-src ${frameHosts.join(' ')}`,
-  "object-src 'none'",
-  "base-uri 'self'",
-  // www.facebook.com: the Facebook Pixel (via GTM) posts its automatic click
-  // events to /tr/ through a form submission, which form-action governs.
-  "form-action 'self' https://api.web3forms.com https://www.facebook.com",
-  'upgrade-insecure-requests',
-].join('; ');
+// The CSP used to live here as a <meta> because GitHub Pages cannot set response
+// headers. The apex is now proxied through Cloudflare, so the policy ships as a
+// real header: frame-ancestors and report-uri actually work (both are ignored in
+// a meta CSP), it covers non-HTML responses, and it can change without a deploy.
+//
+// Do NOT add a <meta> CSP back here. Browsers enforce every policy they receive,
+// so a meta tag would apply on top of the edge policy as an intersection, and the
+// stricter of the two wins — silently overriding the rule in Cloudflare.
+//
+// IMPORTANT: adding a GTM tag that loads a script from a new domain now means
+// adding that domain to script-src in the Cloudflare rule, not in this file.
+//
+// Set at the edge: Content-Security-Policy, X-Frame-Options, Referrer-Policy,
+// Permissions-Policy, Strict-Transport-Security, X-Content-Type-Options.
 ---
-<meta http-equiv="Content-Security-Policy" content={csp}>
 <meta name="referrer" content="strict-origin-when-cross-origin">
