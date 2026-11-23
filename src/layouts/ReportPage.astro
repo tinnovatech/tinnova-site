@@ -27,7 +27,7 @@ const objectives = t<{ title: string; body: string }[]>('report.objectives');
 
 <!-- ============ OBJETIVOS DO PROGRAMA ============ -->
 <section class="story-section privacy-data-section">
-  <div class="story-wrap" style="text-align:center;align-items:center;max-width:1000px;margin:0 auto;">
+  <div class="story-wrap">
     <p class="eyebrow">{t('report.objectivesEyebrow')}</p>
     <div class="story-body privacy-data-body">
       <div class="privacy-topics">
@@ -43,8 +43,8 @@ const objectives = t<{ title: string; body: string }[]>('report.objectives');
 </section>
 
 <!-- ============ CANAL DE DENUNCIAS ============ -->
-<section class="story-section" style="background:rgba(245,245,245,0.95);">
-  <div class="story-wrap" style="text-align:left;align-items:flex-start;max-width:1000px;margin:0 auto;">
+<section class="story-section">
+  <div class="story-wrap">
     <p class="eyebrow">{t('report.channelEyebrow')}</p>
     <div class="story-body">
       <p>{t('report.channelText')}</p>
@@ -57,7 +57,7 @@ const objectives = t<{ title: string; body: string }[]>('report.objectives');
   <div class="story-wrap">
     <p class="eyebrow">{t('report.formEyebrow')}</p>
     <h2>{t('report.formTitle')}</h2>
-    <div class="final-form-wrap" style="margin-top:24px;width:100%;max-width:640px;">
+    <div class="final-form-wrap">
       <ReportForm />
     </div>
   </div>
@@ -74,6 +74,42 @@ const objectives = t<{ title: string; body: string }[]>('report.objectives');
   .privacy-page .story-section {
     padding-top: 34px;
     padding-bottom: 34px;
+  }
+
+  /* Below 1150px the solution layout paints the hero dark over a per-page
+     photo (--hero-bg) and turns its text white; the legal pages have no
+     photo, so they keep the light desktop hero. */
+  .privacy-page .breadcrumb-wrap { background: none; }
+  .privacy-page .breadcrumb,
+  .privacy-page .breadcrumb a { color: var(--muted-gray); }
+  .privacy-page .breadcrumb strong { color: var(--navy); }
+  .privacy-page .hero2 .eyebrow { color: var(--purple); }
+  .privacy-page .hero2 h1 { color: var(--near-black); }
+  .privacy-page .hero2 .lead { color: var(--muted-gray); }
+
+  /* The solution pages lay .story-wrap out as a two-column grid; the legal
+     pages are a single centered column of reading text. */
+  .privacy-page .story-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .privacy-page .story-body {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .privacy-page .final-form-wrap {
+    flex: none;
+    width: 100%;
+    max-width: 640px;
+    margin-top: 8px;
+    text-align: left;
   }
 
   .privacy-page .privacy-topics {
