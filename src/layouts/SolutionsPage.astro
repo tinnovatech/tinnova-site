@@ -141,11 +141,7 @@ const heroBg = SERVICE_IMAGES[entry.slug]?.src ?? s.hero.image.src;---
       <p>{s.proximoPasso.body}</p>
     </div>
     <div class="final-form-wrap">
-      <ContactForm
-        subject={`Novo contato pelo site Tinnova ${s.contactLabel}`}
-        fromName={`Site Tinnova ${s.contactLabel}`}
-        pageCode={entry.slug}
-      />
+      <ContactForm pageCode={entry.slug} />
     </div>
   </div>
 </section>
