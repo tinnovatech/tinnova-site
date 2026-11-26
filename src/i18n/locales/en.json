@@ -124,7 +124,8 @@
     "submitSending": "Sending...",
     "disclaimer": "Your data will only be used to respond to your request.",
     "successMsg": "Message sent! Redirecting to WhatsApp...",
-    "errorMsg": "We couldn't send it right now. Please try again or reach us on WhatsApp."
+    "errorMsg": "We couldn't send it right now. Please try again or reach us on WhatsApp.",
+    "rateLimitMsg": "You have already sent a few messages. Try again later."
   },
   "reportForm": {
     "identificacaoLabel": "Would you like to identify yourself?",

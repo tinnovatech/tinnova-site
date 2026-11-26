@@ -124,7 +124,8 @@
     "submitSending": "Enviando...",
     "disclaimer": "Tus datos se utilizarán únicamente para responder al contacto.",
     "successMsg": "¡Mensaje enviado! Redirigiendo a WhatsApp...",
-    "errorMsg": "No pudimos enviarlo en este momento. Intenta de nuevo o escríbenos por WhatsApp."
+    "errorMsg": "No pudimos enviarlo en este momento. Intenta de nuevo o escríbenos por WhatsApp.",
+    "rateLimitMsg": "Ya enviaste algunos mensajes. Inténtalo de nuevo más tarde."
   },
   "reportForm": {
     "identificacaoLabel": "¿Deseas identificarte?",
